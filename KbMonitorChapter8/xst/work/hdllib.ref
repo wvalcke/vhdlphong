@@ -1,0 +1,14 @@
+AR mod_m_counter arch /home/dumbo/XilinxProjects/PhongVhdlBook/KbMonitorChapter8/list_ch04_11_mod_m.vhd sub00/vhpl01 1578840099
+AR ps2_rx arch /home/dumbo/XilinxProjects/PhongVhdlBook/KbMonitorChapter8/list_ch08_01_ps2_rx.vhd sub00/vhpl09 1578840107
+EN ps2_rx NULL /home/dumbo/XilinxProjects/PhongVhdlBook/KbMonitorChapter8/list_ch08_01_ps2_rx.vhd sub00/vhpl08 1578840106
+AR fifo arch /home/dumbo/XilinxProjects/PhongVhdlBook/KbMonitorChapter8/list_ch04_20_fifo.vhd sub00/vhpl05 1578840103
+AR kb_monitor arch /home/dumbo/XilinxProjects/PhongVhdlBook/KbMonitorChapter8/list_ch08_02_kb_mon.vhd sub00/vhpl13 1578840111
+EN kb_monitor NULL /home/dumbo/XilinxProjects/PhongVhdlBook/KbMonitorChapter8/list_ch08_02_kb_mon.vhd sub00/vhpl12 1578840110
+EN fifo NULL /home/dumbo/XilinxProjects/PhongVhdlBook/KbMonitorChapter8/list_ch04_20_fifo.vhd sub00/vhpl04 1578840102
+EN uart NULL /home/dumbo/XilinxProjects/PhongVhdlBook/KbMonitorChapter8/list_ch07_04_uart.vhd sub00/vhpl10 1578840108
+EN mod_m_counter NULL /home/dumbo/XilinxProjects/PhongVhdlBook/KbMonitorChapter8/list_ch04_11_mod_m.vhd sub00/vhpl00 1578840098
+AR uart_tx arch /home/dumbo/XilinxProjects/PhongVhdlBook/KbMonitorChapter8/list_ch07_03_uart_tx.vhd sub00/vhpl07 1578840105
+EN uart_rx NULL /home/dumbo/XilinxProjects/PhongVhdlBook/KbMonitorChapter8/list_ch07_01_uart_rx.vhd sub00/vhpl02 1578840100
+EN uart_tx NULL /home/dumbo/XilinxProjects/PhongVhdlBook/KbMonitorChapter8/list_ch07_03_uart_tx.vhd sub00/vhpl06 1578840104
+AR uart_rx arch /home/dumbo/XilinxProjects/PhongVhdlBook/KbMonitorChapter8/list_ch07_01_uart_rx.vhd sub00/vhpl03 1578840101
+AR uart str_arch /home/dumbo/XilinxProjects/PhongVhdlBook/KbMonitorChapter8/list_ch07_04_uart.vhd sub00/vhpl11 1578840109

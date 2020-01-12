@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/dumbo/XilinxProjects/PhongVhdlBook/KbMonitorChapter8/kb_monitor.ncd
+OUTFILE=/home/dumbo/XilinxProjects/PhongVhdlBook/KbMonitorChapter8/kb_monitor.bit
+FAMILY=Spartan3E
+PART=xc3s1200e-5fg320
+WORKINGDIR=/home/dumbo/XilinxProjects/PhongVhdlBook/KbMonitorChapter8
+LICENSE=WebPack
+USER_INFO=__0_0_0
