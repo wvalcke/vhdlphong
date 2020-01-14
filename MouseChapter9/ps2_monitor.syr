@@ -1,0 +1,1015 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Reading design: ps2_monitor.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ps2_monitor.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ps2_monitor"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-5-fg320
+
+---- Source Options
+Top Module Name                    : ps2_monitor
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch04_11_mod_m.vhd" in Library work.
+Entity <mod_m_counter> compiled.
+Entity <mod_m_counter> (Architecture <arch>) compiled.
+Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_01_uart_rx.vhd" in Library work.
+Entity <uart_rx> compiled.
+Entity <uart_rx> (Architecture <arch>) compiled.
+Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch04_20_fifo.vhd" in Library work.
+Entity <fifo> compiled.
+Entity <fifo> (Architecture <arch>) compiled.
+Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_03_uart_tx.vhd" in Library work.
+Entity <uart_tx> compiled.
+Entity <uart_tx> (Architecture <arch>) compiled.
+Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_01_ps2_tx.vhd" in Library work.
+Entity <ps2_tx> compiled.
+Entity <ps2_tx> (Architecture <arch>) compiled.
+Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch08_01_ps2_rx.vhd" in Library work.
+Entity <ps2_rx> compiled.
+Entity <ps2_rx> (Architecture <arch>) compiled.
+Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch06_01_02_debounce.vhd" in Library work.
+Entity <debounce> compiled.
+Entity <debounce> (Architecture <fsmd_arch>) compiled.
+Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_02_ps2_rxtx.vhd" in Library work.
+Entity <ps2_rxtx> compiled.
+Entity <ps2_rxtx> (Architecture <arch>) compiled.
+Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_04_uart.vhd" in Library work.
+Entity <uart> compiled.
+Entity <uart> (Architecture <str_arch>) compiled.
+Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_03_ps2_mon.vhd" in Library work.
+Entity <ps2_monitor> compiled.
+Entity <ps2_monitor> (Architecture <arch>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ps2_monitor> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <debounce> in library <work> (architecture <fsmd_arch>).
+
+Analyzing hierarchy for entity <ps2_rxtx> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <uart> in library <work> (architecture <str_arch>) with generics.
+	DBIT = 8
+	DVSR = 163
+	DVSR_BIT = 8
+	FIFO_W = 4
+	SB_TICK = 16
+
+Analyzing hierarchy for entity <ps2_tx> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <ps2_rx> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <mod_m_counter> in library <work> (architecture <arch>) with generics.
+	M = 163
+	N = 8
+
+Analyzing hierarchy for entity <uart_rx> in library <work> (architecture <arch>) with generics.
+	DBIT = 8
+	SB_TICK = 16
+
+Analyzing hierarchy for entity <fifo> in library <work> (architecture <arch>) with generics.
+	B = 8
+	W = 4
+
+Analyzing hierarchy for entity <uart_tx> in library <work> (architecture <arch>) with generics.
+	DBIT = 8
+	SB_TICK = 16
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ps2_monitor> in library <work> (Architecture <arch>).
+WARNING:Xst:753 - "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_03_ps2_mon.vhd" line 33: Unconnected output port 'db_level' of component 'debounce'.
+WARNING:Xst:753 - "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_03_ps2_mon.vhd" line 36: Unconnected output port 'tx_done_tick' of component 'ps2_rxtx'.
+WARNING:Xst:753 - "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_03_ps2_mon.vhd" line 41: Unconnected output port 'tx_full' of component 'uart'.
+WARNING:Xst:753 - "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_03_ps2_mon.vhd" line 41: Unconnected output port 'rx_empty' of component 'uart'.
+WARNING:Xst:753 - "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_03_ps2_mon.vhd" line 41: Unconnected output port 'r_data' of component 'uart'.
+Entity <ps2_monitor> analyzed. Unit <ps2_monitor> generated.
+
+Analyzing Entity <debounce> in library <work> (Architecture <fsmd_arch>).
+Entity <debounce> analyzed. Unit <debounce> generated.
+
+Analyzing Entity <ps2_rxtx> in library <work> (Architecture <arch>).
+Entity <ps2_rxtx> analyzed. Unit <ps2_rxtx> generated.
+
+Analyzing Entity <ps2_tx> in library <work> (Architecture <arch>).
+Entity <ps2_tx> analyzed. Unit <ps2_tx> generated.
+
+Analyzing Entity <ps2_rx> in library <work> (Architecture <arch>).
+Entity <ps2_rx> analyzed. Unit <ps2_rx> generated.
+
+Analyzing generic Entity <uart> in library <work> (Architecture <str_arch>).
+	DBIT = 8
+	DVSR = 163
+	DVSR_BIT = 8
+	FIFO_W = 4
+	SB_TICK = 16
+WARNING:Xst:753 - "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_04_uart.vhd" line 37: Unconnected output port 'q' of component 'mod_m_counter'.
+WARNING:Xst:753 - "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_04_uart.vhd" line 46: Unconnected output port 'full' of component 'fifo'.
+Entity <uart> analyzed. Unit <uart> generated.
+
+Analyzing generic Entity <mod_m_counter> in library <work> (Architecture <arch>).
+	M = 163
+	N = 8
+Entity <mod_m_counter> analyzed. Unit <mod_m_counter> generated.
+
+Analyzing generic Entity <uart_rx> in library <work> (Architecture <arch>).
+	DBIT = 8
+	SB_TICK = 16
+Entity <uart_rx> analyzed. Unit <uart_rx> generated.
+
+Analyzing generic Entity <fifo> in library <work> (Architecture <arch>).
+	B = 8
+	W = 4
+Entity <fifo> analyzed. Unit <fifo> generated.
+
+Analyzing generic Entity <uart_tx> in library <work> (Architecture <arch>).
+	DBIT = 8
+	SB_TICK = 16
+Entity <uart_tx> analyzed. Unit <uart_tx> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <debounce>.
+    Related source file is "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch06_01_02_debounce.vhd".
+    Found finite state machine <FSM_0> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | zero                                           |
+    | Power Up State     | zero                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 21-bit subtractor for signal <q_next$share0000> created at line 36.
+    Found 21-bit register for signal <q_reg>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <debounce> synthesized.
+
+
+Synthesizing Unit <ps2_tx>.
+    Related source file is "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_01_ps2_tx.vhd".
+    Found finite state machine <FSM_1> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit tristate buffer for signal <ps2c>.
+    Found 1-bit tristate buffer for signal <ps2d>.
+    Found 9-bit register for signal <b_reg>.
+    Found 13-bit register for signal <c_reg>.
+    Found 13-bit subtractor for signal <c_reg$addsub0000> created at line 95.
+    Found 1-bit register for signal <f_ps2c_reg>.
+    Found 8-bit register for signal <filter_reg>.
+    Found 4-bit register for signal <n_reg>.
+    Found 4-bit subtractor for signal <n_reg$addsub0000> created at line 114.
+    Found 1-bit xor8 for signal <par$xor0000> created at line 68.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  35 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Xor(s).
+	inferred   2 Tristate(s).
+Unit <ps2_tx> synthesized.
+
+
+Synthesizing Unit <ps2_rx>.
+    Related source file is "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch08_01_ps2_rx.vhd".
+WARNING:Xst:646 - Signal <b_reg<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_2> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 11-bit register for signal <b_reg>.
+    Found 1-bit register for signal <f_ps2c_reg>.
+    Found 8-bit register for signal <filter_reg>.
+    Found 4-bit register for signal <n_reg>.
+    Found 4-bit subtractor for signal <n_reg$addsub0000> created at line 82.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <ps2_rx> synthesized.
+
+
+Synthesizing Unit <mod_m_counter>.
+    Related source file is "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch04_11_mod_m.vhd".
+    Found 8-bit adder for signal <r_next$addsub0000> created at line 31.
+    Found 8-bit register for signal <r_reg>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <mod_m_counter> synthesized.
+
+
+Synthesizing Unit <uart_rx>.
+    Related source file is "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_01_uart_rx.vhd".
+INFO:Xst:1799 - State data is never reached in FSM <state_reg>.
+INFO:Xst:1799 - State start is never reached in FSM <state_reg>.
+INFO:Xst:1799 - State stop is never reached in FSM <state_reg>.
+    Found finite state machine <FSM_3> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 1                                              |
+    | Transitions        | 1                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <b_reg>.
+    Found 3-bit register for signal <n_reg>.
+    Found 3-bit adder for signal <n_reg$addsub0000> created at line 73.
+    Found 4-bit register for signal <s_reg>.
+    Found 4-bit adder for signal <s_reg$share0000> created at line 49.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  15 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <uart_rx> synthesized.
+
+
+Synthesizing Unit <fifo>.
+    Related source file is "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch04_20_fifo.vhd".
+    Found 8-bit 16-to-1 multiplexer for signal <r_data>.
+    Found 128-bit register for signal <array_reg>.
+    Found 1-bit register for signal <empty_reg>.
+    Found 4-bit comparator equal for signal <empty_reg$cmp_eq0000> created at line 89.
+    Found 1-bit 4-to-1 multiplexer for signal <empty_reg$mux0000> created at line 83.
+    Found 1-bit register for signal <full_reg>.
+    Found 4-bit comparator equal for signal <full_reg$cmp_eq0000> created at line 97.
+    Found 1-bit 4-to-1 multiplexer for signal <full_reg$mux0000> created at line 83.
+    Found 4-bit register for signal <r_ptr_reg>.
+    Found 4-bit 4-to-1 multiplexer for signal <r_ptr_reg$mux0000> created at line 83.
+    Found 4-bit adder for signal <r_ptr_succ$add0000> created at line 72.
+    Found 4-bit register for signal <w_ptr_reg>.
+    Found 4-bit 4-to-1 multiplexer for signal <w_ptr_reg$mux0000> created at line 83.
+    Found 4-bit adder for signal <w_ptr_succ$add0000> created at line 71.
+    Summary:
+	inferred 138 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred  18 Multiplexer(s).
+Unit <fifo> synthesized.
+
+
+Synthesizing Unit <uart_tx>.
+    Related source file is "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_03_uart_tx.vhd".
+    Found finite state machine <FSM_4> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <b_reg>.
+    Found 3-bit register for signal <n_reg>.
+    Found 3-bit adder for signal <n_reg$addsub0000> created at line 83.
+    Found 4-bit adder for signal <s_next$add0000> created at line 71.
+    Found 4-bit register for signal <s_reg>.
+    Found 1-bit register for signal <tx_reg>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <uart_tx> synthesized.
+
+
+Synthesizing Unit <ps2_rxtx>.
+    Related source file is "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_02_ps2_rxtx.vhd".
+Unit <ps2_rxtx> synthesized.
+
+
+Synthesizing Unit <uart>.
+    Related source file is "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_04_uart.vhd".
+Unit <uart> synthesized.
+
+
+Synthesizing Unit <ps2_monitor>.
+    Related source file is "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_03_ps2_mon.vhd".
+    Found finite state machine <FSM_5> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16x8-bit ROM for signal <ascii_code>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 ROM(s).
+Unit <ps2_monitor> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 13
+ 13-bit subtractor                                     : 1
+ 21-bit subtractor                                     : 1
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 6
+ 4-bit subtractor                                      : 2
+ 8-bit adder                                           : 1
+# Registers                                            : 58
+ 1-bit register                                        : 7
+ 11-bit register                                       : 1
+ 13-bit register                                       : 1
+ 21-bit register                                       : 1
+ 3-bit register                                        : 2
+ 4-bit register                                        : 8
+ 8-bit register                                        : 37
+ 9-bit register                                        : 1
+# Comparators                                          : 4
+ 4-bit comparator equal                                : 4
+# Multiplexers                                         : 10
+ 1-bit 4-to-1 multiplexer                              : 4
+ 4-bit 4-to-1 multiplexer                              : 4
+ 8-bit 16-to-1 multiplexer                             : 2
+# Tristates                                            : 2
+ 1-bit tristate buffer                                 : 2
+# Xors                                                 : 1
+ 1-bit xor8                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_5> for best encoding.
+Optimizing FSM <state_reg/FSM> on signal <state_reg[1:4]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 0001
+ sendh | 0010
+ sendl | 0100
+ sendb | 1000
+-------------------
+Analyzing FSM <FSM_4> for best encoding.
+Optimizing FSM <uart_unit/uart_tx_unit/state_reg/FSM> on signal <state_reg[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 00
+ start | 01
+ data  | 11
+ stop  | 10
+-------------------
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <uart_unit/uart_rx_unit/state_reg/FSM> on signal <state_reg[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 00
+ start | unreached
+ data  | unreached
+ stop  | unreached
+-------------------
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <ps2_rxtx_unit/ps2_rx_unit/state_reg/FSM> on signal <state_reg[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 00
+ dps   | 01
+ load  | 11
+-------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <ps2_rxtx_unit/ps2_tx_unit/state_reg/FSM> on signal <state_reg[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 000
+ rts   | 001
+ start | 011
+ data  | 010
+ stop  | 110
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <btn_db_unit/state_reg/FSM> on signal <state_reg[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ zero  | 00
+ wait0 | 10
+ one   | 11
+ wait1 | 01
+-------------------
+WARNING:Xst:1290 - Hierarchical block <uart_rx_unit> is unconnected in block <uart_unit>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fifo_rx_unit> is unconnected in block <uart_unit>.
+   It will be removed from the design.
+WARNING:Xst:2677 - Node <b_reg_0> of sequential type is unconnected in block <ps2_rx_unit>.
+WARNING:Xst:2677 - Node <b_reg_0> of sequential type is unconnected in block <ps2_rx>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 6
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 11
+ 13-bit subtractor                                     : 1
+ 21-bit subtractor                                     : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 5
+ 4-bit subtractor                                      : 2
+ 8-bit adder                                           : 1
+# Registers                                            : 394
+ Flip-Flops                                            : 394
+# Comparators                                          : 4
+ 4-bit comparator equal                                : 4
+# Multiplexers                                         : 10
+ 1-bit 4-to-1 multiplexer                              : 4
+ 4-bit 4-to-1 multiplexer                              : 4
+ 8-bit 16-to-1 multiplexer                             : 2
+# Xors                                                 : 1
+ 1-bit xor8                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <n_reg_0> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <n_reg_1> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <n_reg_2> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_reg_7> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_reg_0> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_reg_1> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_reg_2> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_reg_3> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_reg_6> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_reg_5> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_reg_4> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_reg_3> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_reg_2> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_reg_1> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_reg_0> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <ps2_monitor> ...
+
+Optimizing unit <debounce> ...
+
+Optimizing unit <ps2_rx> ...
+
+Optimizing unit <mod_m_counter> ...
+
+Optimizing unit <fifo> ...
+
+Optimizing unit <uart_tx> ...
+WARNING:Xst:1710 - FF/Latch <uart_unit/uart_tx_unit/b_reg_7> (without init value) has a constant value of 0 in block <ps2_monitor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_unit/fifo_tx_unit/array_reg_0_7> (without init value) has a constant value of 0 in block <ps2_monitor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_unit/fifo_tx_unit/array_reg_1_7> (without init value) has a constant value of 0 in block <ps2_monitor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_unit/fifo_tx_unit/array_reg_2_7> (without init value) has a constant value of 0 in block <ps2_monitor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_unit/fifo_tx_unit/array_reg_3_7> (without init value) has a constant value of 0 in block <ps2_monitor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_unit/fifo_tx_unit/array_reg_4_7> (without init value) has a constant value of 0 in block <ps2_monitor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_unit/fifo_tx_unit/array_reg_5_7> (without init value) has a constant value of 0 in block <ps2_monitor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_unit/fifo_tx_unit/array_reg_6_7> (without init value) has a constant value of 0 in block <ps2_monitor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_unit/fifo_tx_unit/array_reg_7_7> (without init value) has a constant value of 0 in block <ps2_monitor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_unit/fifo_tx_unit/array_reg_8_7> (without init value) has a constant value of 0 in block <ps2_monitor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_unit/fifo_tx_unit/array_reg_9_7> (without init value) has a constant value of 0 in block <ps2_monitor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_unit/fifo_tx_unit/array_reg_10_7> (without init value) has a constant value of 0 in block <ps2_monitor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_unit/fifo_tx_unit/array_reg_11_7> (without init value) has a constant value of 0 in block <ps2_monitor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_unit/fifo_tx_unit/array_reg_12_7> (without init value) has a constant value of 0 in block <ps2_monitor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_unit/fifo_tx_unit/array_reg_13_7> (without init value) has a constant value of 0 in block <ps2_monitor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_unit/fifo_tx_unit/array_reg_14_7> (without init value) has a constant value of 0 in block <ps2_monitor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_unit/fifo_tx_unit/array_reg_15_7> (without init value) has a constant value of 0 in block <ps2_monitor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/w_ptr_reg_3> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/w_ptr_reg_2> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/w_ptr_reg_1> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/w_ptr_reg_0> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/full_reg> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/empty_reg> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/r_ptr_reg_3> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/r_ptr_reg_2> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/r_ptr_reg_1> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/r_ptr_reg_0> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_15_7> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_15_6> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_15_5> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_15_4> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_15_3> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_15_2> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_15_1> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_15_0> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_14_7> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_14_6> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_14_5> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_14_4> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_14_3> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_14_2> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_14_1> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_14_0> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_13_7> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_13_6> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_13_5> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_13_4> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_13_3> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_13_2> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_13_1> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_13_0> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_12_7> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_12_6> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_12_5> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_12_4> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_12_3> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_12_2> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_12_1> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_12_0> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_11_7> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_11_6> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_11_5> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_11_4> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_11_3> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_11_2> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_11_1> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_11_0> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_10_7> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_10_6> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_10_5> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_10_4> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_10_3> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_10_2> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_10_1> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_10_0> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_9_7> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_9_6> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_9_5> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_9_4> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_9_3> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_9_2> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_9_1> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_9_0> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_8_7> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_8_6> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_8_5> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_8_4> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_8_3> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_8_2> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_8_1> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_8_0> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_7_7> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_7_6> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_7_5> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_7_4> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_7_3> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_7_2> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_7_1> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_7_0> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_6_7> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_6_6> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_6_5> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_6_4> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_6_3> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_6_2> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_6_1> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_6_0> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_5_7> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_5_6> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_5_5> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_5_4> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_5_3> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_5_2> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_5_1> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_5_0> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_4_7> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_4_6> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_4_5> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_4_4> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_4_3> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_4_2> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_4_1> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_4_0> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_3_7> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_3_6> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_3_5> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_3_4> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_3_3> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_3_2> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_3_1> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_3_0> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_2_7> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_2_6> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_2_5> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_2_4> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_2_3> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_2_2> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_2_1> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_2_0> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_1_7> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_1_6> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_1_5> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_1_4> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_1_3> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_1_2> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_1_1> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_1_0> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_0_7> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_0_6> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_0_5> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_0_4> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_0_3> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_0_2> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_0_1> of sequential type is unconnected in block <ps2_monitor>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/array_reg_0_0> of sequential type is unconnected in block <ps2_monitor>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <ps2_rxtx_unit/ps2_tx_unit/filter_reg_7> in Unit <ps2_monitor> is equivalent to the following FF/Latch, which will be removed : <ps2_rxtx_unit/ps2_rx_unit/filter_reg_7> 
+INFO:Xst:2261 - The FF/Latch <ps2_rxtx_unit/ps2_tx_unit/filter_reg_6> in Unit <ps2_monitor> is equivalent to the following FF/Latch, which will be removed : <ps2_rxtx_unit/ps2_rx_unit/filter_reg_6> 
+INFO:Xst:2261 - The FF/Latch <ps2_rxtx_unit/ps2_tx_unit/filter_reg_5> in Unit <ps2_monitor> is equivalent to the following FF/Latch, which will be removed : <ps2_rxtx_unit/ps2_rx_unit/filter_reg_5> 
+INFO:Xst:2261 - The FF/Latch <ps2_rxtx_unit/ps2_tx_unit/filter_reg_4> in Unit <ps2_monitor> is equivalent to the following FF/Latch, which will be removed : <ps2_rxtx_unit/ps2_rx_unit/filter_reg_4> 
+INFO:Xst:2261 - The FF/Latch <ps2_rxtx_unit/ps2_tx_unit/filter_reg_3> in Unit <ps2_monitor> is equivalent to the following FF/Latch, which will be removed : <ps2_rxtx_unit/ps2_rx_unit/filter_reg_3> 
+INFO:Xst:2261 - The FF/Latch <ps2_rxtx_unit/ps2_tx_unit/filter_reg_2> in Unit <ps2_monitor> is equivalent to the following FF/Latch, which will be removed : <ps2_rxtx_unit/ps2_rx_unit/filter_reg_2> 
+INFO:Xst:2261 - The FF/Latch <ps2_rxtx_unit/ps2_tx_unit/filter_reg_1> in Unit <ps2_monitor> is equivalent to the following FF/Latch, which will be removed : <ps2_rxtx_unit/ps2_rx_unit/filter_reg_1> 
+INFO:Xst:2261 - The FF/Latch <ps2_rxtx_unit/ps2_tx_unit/filter_reg_0> in Unit <ps2_monitor> is equivalent to the following FF/Latch, which will be removed : <ps2_rxtx_unit/ps2_rx_unit/filter_reg_0> 
+Found area constraint ratio of 100 (+ 5) on block ps2_monitor, actual ratio is 2.
+FlipFlop btn_db_unit/state_reg_FSM_FFd2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 230
+ Flip-Flops                                            : 230
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ps2_monitor.ngr
+Top Level Output File Name         : ps2_monitor
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 14
+
+Cell Usage :
+# BELS                             : 589
+#      GND                         : 1
+#      INV                         : 32
+#      LUT1                        : 2
+#      LUT2                        : 19
+#      LUT2_D                      : 3
+#      LUT3                        : 103
+#      LUT3_D                      : 2
+#      LUT3_L                      : 13
+#      LUT4                        : 229
+#      LUT4_D                      : 9
+#      LUT4_L                      : 21
+#      MUXCY                       : 38
+#      MUXF5                       : 61
+#      MUXF6                       : 14
+#      MUXF7                       : 7
+#      VCC                         : 1
+#      XORCY                       : 34
+# FlipFlops/Latches                : 230
+#      FDC                         : 115
+#      FDCE                        : 112
+#      FDP                         : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 10
+#      IOBUF                       : 2
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-5 
+
+ Number of Slices:                      254  out of   8672     2%  
+ Number of Slice Flip Flops:            230  out of  17344     1%  
+ Number of 4 input LUTs:                433  out of  17344     2%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    250     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 230   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+btn<1>                             | IBUF                   | 230   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 8.477ns (Maximum Frequency: 117.966MHz)
+   Minimum input arrival time before clock: 8.418ns
+   Maximum output required time after clock: 5.885ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.477ns (frequency: 117.966MHz)
+  Total number of paths / destination ports: 13466 / 339
+-------------------------------------------------------------------------
+Delay:               8.477ns (Levels of Logic = 26)
+  Source:            btn_db_unit/q_reg_0 (FF)
+  Destination:       ps2_rxtx_unit/ps2_tx_unit/state_reg_FSM_FFd3 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: btn_db_unit/q_reg_0 to ps2_rxtx_unit/ps2_tx_unit/state_reg_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.514   0.603  btn_db_unit/q_reg_0 (btn_db_unit/q_reg_0)
+     LUT1:I0->O            1   0.612   0.000  btn_db_unit/Msub_q_next_share0000_cy<0>_rt (btn_db_unit/Msub_q_next_share0000_cy<0>_rt)
+     MUXCY:S->O            1   0.404   0.000  btn_db_unit/Msub_q_next_share0000_cy<0> (btn_db_unit/Msub_q_next_share0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  btn_db_unit/Msub_q_next_share0000_cy<1> (btn_db_unit/Msub_q_next_share0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  btn_db_unit/Msub_q_next_share0000_cy<2> (btn_db_unit/Msub_q_next_share0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  btn_db_unit/Msub_q_next_share0000_cy<3> (btn_db_unit/Msub_q_next_share0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  btn_db_unit/Msub_q_next_share0000_cy<4> (btn_db_unit/Msub_q_next_share0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  btn_db_unit/Msub_q_next_share0000_cy<5> (btn_db_unit/Msub_q_next_share0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  btn_db_unit/Msub_q_next_share0000_cy<6> (btn_db_unit/Msub_q_next_share0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  btn_db_unit/Msub_q_next_share0000_cy<7> (btn_db_unit/Msub_q_next_share0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  btn_db_unit/Msub_q_next_share0000_cy<8> (btn_db_unit/Msub_q_next_share0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  btn_db_unit/Msub_q_next_share0000_cy<9> (btn_db_unit/Msub_q_next_share0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  btn_db_unit/Msub_q_next_share0000_cy<10> (btn_db_unit/Msub_q_next_share0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  btn_db_unit/Msub_q_next_share0000_cy<11> (btn_db_unit/Msub_q_next_share0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  btn_db_unit/Msub_q_next_share0000_cy<12> (btn_db_unit/Msub_q_next_share0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  btn_db_unit/Msub_q_next_share0000_cy<13> (btn_db_unit/Msub_q_next_share0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  btn_db_unit/Msub_q_next_share0000_cy<14> (btn_db_unit/Msub_q_next_share0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  btn_db_unit/Msub_q_next_share0000_cy<15> (btn_db_unit/Msub_q_next_share0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  btn_db_unit/Msub_q_next_share0000_cy<16> (btn_db_unit/Msub_q_next_share0000_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  btn_db_unit/Msub_q_next_share0000_cy<17> (btn_db_unit/Msub_q_next_share0000_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  btn_db_unit/Msub_q_next_share0000_cy<18> (btn_db_unit/Msub_q_next_share0000_cy<18>)
+     XORCY:CI->O           1   0.699   0.360  btn_db_unit/Msub_q_next_share0000_xor<19> (btn_db_unit/q_next_share0000<19>)
+     LUT4:I3->O            2   0.612   0.383  btn_db_unit/q_next<19>1 (btn_db_unit/q_next<19>)
+     LUT4:I3->O            1   0.612   0.000  btn_db_unit/state_reg_cmp_eq0000_wg_lut<4> (btn_db_unit/state_reg_cmp_eq0000_wg_lut<4>)
+     MUXCY:S->O            1   0.404   0.000  btn_db_unit/state_reg_cmp_eq0000_wg_cy<4> (btn_db_unit/state_reg_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O          24   0.399   1.067  btn_db_unit/state_reg_cmp_eq0000_wg_cy<5> (btn_db_unit/state_reg_cmp_eq0000)
+     LUT4:I3->O            1   0.612   0.000  btn_db_unit/state_reg_FSM_FFd1-In1 (btn_db_unit/state_reg_FSM_FFd1-In)
+     FDC:D                     0.268          btn_db_unit/state_reg_FSM_FFd1
+    ----------------------------------------
+    Total                      8.477ns (6.063ns logic, 2.414ns route)
+                                       (71.5% logic, 28.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1033 / 49
+-------------------------------------------------------------------------
+Offset:              8.418ns (Levels of Logic = 10)
+  Source:            btn<0> (PAD)
+  Destination:       ps2_rxtx_unit/ps2_tx_unit/state_reg_FSM_FFd3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: btn<0> to ps2_rxtx_unit/ps2_tx_unit/state_reg_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.106   0.945  btn_0_IBUF (btn_0_IBUF)
+     LUT2:I0->O           24   0.612   1.094  btn_db_unit/q_next<0>11 (btn_db_unit/N01)
+     LUT4:I2->O            2   0.612   0.532  btn_db_unit/q_next<12>1 (btn_db_unit/q_next<12>)
+     LUT4:I0->O            1   0.612   0.000  btn_db_unit/state_reg_cmp_eq0000_wg_lut<1> (btn_db_unit/state_reg_cmp_eq0000_wg_lut<1>)
+     MUXCY:S->O            1   0.404   0.000  btn_db_unit/state_reg_cmp_eq0000_wg_cy<1> (btn_db_unit/state_reg_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  btn_db_unit/state_reg_cmp_eq0000_wg_cy<2> (btn_db_unit/state_reg_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  btn_db_unit/state_reg_cmp_eq0000_wg_cy<3> (btn_db_unit/state_reg_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  btn_db_unit/state_reg_cmp_eq0000_wg_cy<4> (btn_db_unit/state_reg_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O          24   0.399   1.067  btn_db_unit/state_reg_cmp_eq0000_wg_cy<5> (btn_db_unit/state_reg_cmp_eq0000)
+     LUT4:I3->O            1   0.612   0.000  btn_db_unit/state_reg_FSM_FFd1-In1 (btn_db_unit/state_reg_FSM_FFd1-In)
+     FDC:D                     0.268          btn_db_unit/state_reg_FSM_FFd1
+    ----------------------------------------
+    Total                      8.418ns (4.780ns logic, 3.638ns route)
+                                       (56.8% logic, 43.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 13 / 3
+-------------------------------------------------------------------------
+Offset:              5.885ns (Levels of Logic = 2)
+  Source:            ps2_rxtx_unit/ps2_tx_unit/state_reg_FSM_FFd3 (FF)
+  Destination:       ps2c (PAD)
+  Source Clock:      clk rising
+
+  Data Path: ps2_rxtx_unit/ps2_tx_unit/state_reg_FSM_FFd3 to ps2c
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             63   0.514   1.233  ps2_rxtx_unit/ps2_tx_unit/state_reg_FSM_FFd3 (ps2_rxtx_unit/ps2_tx_unit/state_reg_FSM_FFd3)
+     LUT4:I0->O            1   0.612   0.357  ps2_rxtx_unit/ps2_tx_unit/ps2d_out1 (ps2_rxtx_unit/ps2_tx_unit/ps2d_out)
+     IOBUF:I->IO               3.169          ps2d_IOBUF (ps2d)
+    ----------------------------------------
+    Total                      5.885ns (4.295ns logic, 1.590ns route)
+                                       (73.0% logic, 27.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.46 secs
+ 
+--> 
+
+Total memory usage is 4542156 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  182 (   0 filtered)
+Number of infos    :   12 (   0 filtered)
+

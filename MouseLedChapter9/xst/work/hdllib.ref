@@ -1,0 +1,10 @@
+AR ps2_rx arch C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch08_01_ps2_rx.vhd sub00/vhpl03 1578993684
+AR ps2_rxtx arch C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_02_ps2_rxtx.vhd sub00/vhpl05 1578993686
+EN ps2_rx NULL C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch08_01_ps2_rx.vhd sub00/vhpl02 1578993683
+EN ps2_tx NULL C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_01_ps2_tx.vhd sub00/vhpl00 1578993681
+AR mouse arch C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_04_mouse.vhd sub00/vhpl07 1578993688
+EN ps2_rxtx NULL C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_02_ps2_rxtx.vhd sub00/vhpl04 1578993685
+AR mouse_led arch C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_05_mouse_led.vhd sub00/vhpl09 1578993690
+EN mouse NULL C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_04_mouse.vhd sub00/vhpl06 1578993687
+AR ps2_tx arch C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_01_ps2_tx.vhd sub00/vhpl01 1578993682
+EN mouse_led NULL C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_05_mouse_led.vhd sub00/vhpl08 1578993689

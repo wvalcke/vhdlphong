@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\BEP\fpga\vhdlphong\MouseLedChapter9\mouse_led.ncd
+OUTFILE=C:\BEP\fpga\vhdlphong\MouseLedChapter9\mouse_led.bit
+FAMILY=Spartan3E
+PART=xc3s1200e-5fg320
+WORKINGDIR=C:\BEP\fpga\vhdlphong\MouseLedChapter9
+LICENSE=WebPack
+USER_INFO=__0_0_0

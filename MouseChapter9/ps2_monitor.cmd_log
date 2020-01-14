@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/BEP/fpga/vhdlphong/MouseChapter9/ps2_monitor.xst" -ofn "C:/BEP/fpga/vhdlphong/MouseChapter9/ps2_monitor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys2_1200General.ucf -p xc3s1200e-fg320-5 ps2_monitor.ngc ps2_monitor.ngd  
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc Nexys2_1200General.ucf -p xc3s1200e-fg320-5 ps2_monitor.ngc ps2_monitor.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o ps2_monitor_map.ncd ps2_monitor.ngd ps2_monitor.pcf 
+par -w -intstyle ise -ol high -t 1 ps2_monitor_map.ncd ps2_monitor.ncd ps2_monitor.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps2_monitor.twx ps2_monitor.ncd -o ps2_monitor.twr ps2_monitor.pcf -ucf Nexys2_1200General.ucf 
+bitgen -intstyle ise -f ps2_monitor.ut ps2_monitor.ncd 

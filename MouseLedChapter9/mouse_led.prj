@@ -1,0 +1,5 @@
+vhdl work "list_ch09_01_ps2_tx.vhd"
+vhdl work "list_ch08_01_ps2_rx.vhd"
+vhdl work "list_ch09_02_ps2_rxtx.vhd"
+vhdl work "list_ch09_04_mouse.vhd"
+vhdl work "list_ch09_05_mouse_led.vhd"
