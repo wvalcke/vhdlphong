@@ -1,18 +1,21 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.03 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.03 secs
  
---> Reading design: mouse_led.prj
+--> 
+Reading design: mouse_led.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -68,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -104,17 +107,27 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_01_ps2_tx.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/mouse_led is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_05_mouse_led.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_05_mouse_led.vhd".
+WARNING:HDLParsers:3607 - Unit work/mouse_led/arch is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_05_mouse_led.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_05_mouse_led.vhd".
+WARNING:HDLParsers:3607 - Unit work/mouse is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_04_mouse.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_04_mouse.vhd".
+WARNING:HDLParsers:3607 - Unit work/mouse/arch is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_04_mouse.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_04_mouse.vhd".
+WARNING:HDLParsers:3607 - Unit work/ps2_rxtx is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_02_ps2_rxtx.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_02_ps2_rxtx.vhd".
+WARNING:HDLParsers:3607 - Unit work/ps2_rxtx/arch is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_02_ps2_rxtx.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_02_ps2_rxtx.vhd".
+WARNING:HDLParsers:3607 - Unit work/ps2_rx is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch08_01_ps2_rx.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch08_01_ps2_rx.vhd".
+WARNING:HDLParsers:3607 - Unit work/ps2_rx/arch is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch08_01_ps2_rx.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch08_01_ps2_rx.vhd".
+WARNING:HDLParsers:3607 - Unit work/ps2_tx is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_01_ps2_tx.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_01_ps2_tx.vhd".
+WARNING:HDLParsers:3607 - Unit work/ps2_tx/arch is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_01_ps2_tx.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_01_ps2_tx.vhd".
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_01_ps2_tx.vhd" in Library work.
 Architecture arch of Entity ps2_tx is up to date.
-Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch08_01_ps2_rx.vhd" in Library work.
-Architecture arch of Entity ps2_rx is up to date.
-Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_02_ps2_rxtx.vhd" in Library work.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch08_01_ps2_rx.vhd" in Library work.
+Entity <ps2_rx> compiled.
+Entity <ps2_rx> (Architecture <arch>) compiled.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_02_ps2_rxtx.vhd" in Library work.
 Architecture arch of Entity ps2_rxtx is up to date.
-Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_04_mouse.vhd" in Library work.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_04_mouse.vhd" in Library work.
 Architecture arch of Entity mouse is up to date.
-Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_05_mouse_led.vhd" in Library work.
-Entity <mouse_led> compiled.
-Entity <mouse_led> (Architecture <arch>) compiled.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_05_mouse_led.vhd" in Library work.
+Architecture arch of Entity mouse_led is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -134,7 +147,7 @@ Analyzing hierarchy for entity <ps2_rx> in library <work> (architecture <arch>).
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <mouse_led> in library <work> (Architecture <arch>).
-WARNING:Xst:753 - "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_05_mouse_led.vhd" line 24: Unconnected output port 'ym' of component 'mouse'.
+WARNING:Xst:753 - "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_05_mouse_led.vhd" line 24: Unconnected output port 'ym' of component 'mouse'.
 Entity <mouse_led> analyzed. Unit <mouse_led> generated.
 
 Analyzing Entity <mouse> in library <work> (Architecture <arch>).
@@ -157,7 +170,7 @@ Entity <ps2_rx> analyzed. Unit <ps2_rx> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <ps2_tx>.
-    Related source file is "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_01_ps2_tx.vhd".
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_01_ps2_tx.vhd".
     Found finite state machine <FSM_0> for signal <state_reg>.
     -----------------------------------------------------------------------
     | States             | 5                                              |
@@ -190,12 +203,12 @@ Unit <ps2_tx> synthesized.
 
 
 Synthesizing Unit <ps2_rx>.
-    Related source file is "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch08_01_ps2_rx.vhd".
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch08_01_ps2_rx.vhd".
 WARNING:Xst:646 - Signal <b_reg<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found finite state machine <FSM_1> for signal <state_reg>.
     -----------------------------------------------------------------------
     | States             | 3                                              |
-    | Transitions        | 7                                              |
+    | Transitions        | 8                                              |
     | Inputs             | 3                                              |
     | Outputs            | 3                                              |
     | Clock              | clk                       (rising_edge)        |
@@ -210,7 +223,7 @@ WARNING:Xst:646 - Signal <b_reg<0>> is assigned but never used. This unconnected
     Found 1-bit register for signal <f_ps2c_reg>.
     Found 8-bit register for signal <filter_reg>.
     Found 4-bit register for signal <n_reg>.
-    Found 4-bit subtractor for signal <n_reg$addsub0000> created at line 82.
+    Found 4-bit subtractor for signal <n_reg$addsub0000> created at line 83.
     Summary:
 	inferred   1 Finite State Machine(s).
 	inferred  24 D-type flip-flop(s).
@@ -219,12 +232,12 @@ Unit <ps2_rx> synthesized.
 
 
 Synthesizing Unit <ps2_rxtx>.
-    Related source file is "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_02_ps2_rxtx.vhd".
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_02_ps2_rxtx.vhd".
 Unit <ps2_rxtx> synthesized.
 
 
 Synthesizing Unit <mouse>.
-    Related source file is "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_04_mouse.vhd".
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_04_mouse.vhd".
     Found finite state machine <FSM_2> for signal <state_reg>.
     -----------------------------------------------------------------------
     | States             | 7                                              |
@@ -249,7 +262,7 @@ Unit <mouse> synthesized.
 
 
 Synthesizing Unit <mouse_led>.
-    Related source file is "C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_05_mouse_led.vhd".
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_05_mouse_led.vhd".
 WARNING:Xst:646 - Signal <btnm<2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 8x8-bit ROM for signal <led>.
     Found 10-bit adder for signal <p_next$addsub0000> created at line 39.
@@ -373,8 +386,6 @@ INFO:Xst:2261 - The FF/Latch <mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_2>
 INFO:Xst:2261 - The FF/Latch <mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_1> in Unit <mouse_led> is equivalent to the following FF/Latch, which will be removed : <mouse_unit/ps2_rxtx_unit/ps2_rx_unit/filter_reg_1> 
 INFO:Xst:2261 - The FF/Latch <mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_0> in Unit <mouse_led> is equivalent to the following FF/Latch, which will be removed : <mouse_unit/ps2_rxtx_unit/ps2_rx_unit/filter_reg_0> 
 Found area constraint ratio of 100 (+ 5) on block mouse_led, actual ratio is 1.
-FlipFlop mouse_unit/ps2_rxtx_unit/ps2_tx_unit/state_reg_FSM_FFd2 has been replicated 1 time(s)
-FlipFlop mouse_unit/ps2_rxtx_unit/ps2_tx_unit/state_reg_FSM_FFd3 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -382,8 +393,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 84
- Flip-Flops                                            : 84
+# Registers                                            : 82
+ Flip-Flops                                            : 82
 
 =========================================================================
 
@@ -412,25 +423,25 @@ Design Statistics
 # IOs                              : 12
 
 Cell Usage :
-# BELS                             : 273
+# BELS                             : 264
 #      GND                         : 1
 #      INV                         : 12
 #      LUT1                        : 1
-#      LUT2                        : 28
+#      LUT2                        : 27
 #      LUT2_D                      : 3
 #      LUT2_L                      : 8
-#      LUT3                        : 22
+#      LUT3                        : 19
 #      LUT3_D                      : 2
-#      LUT3_L                      : 10
-#      LUT4                        : 102
-#      LUT4_D                      : 3
+#      LUT3_L                      : 14
+#      LUT4                        : 95
+#      LUT4_D                      : 4
 #      LUT4_L                      : 29
 #      MUXCY                       : 21
-#      MUXF5                       : 7
+#      MUXF5                       : 4
 #      VCC                         : 1
 #      XORCY                       : 23
-# FlipFlops/Latches                : 84
-#      FDC                         : 81
+# FlipFlops/Latches                : 82
+#      FDC                         : 79
 #      FDCE                        : 2
 #      FDP                         : 1
 # Clock Buffers                    : 1
@@ -446,9 +457,9 @@ Device utilization summary:
 
 Selected Device : 3s1200efg320-5 
 
- Number of Slices:                      116  out of   8672     1%  
- Number of Slice Flip Flops:             84  out of  17344     0%  
- Number of 4 input LUTs:                220  out of  17344     1%  
+ Number of Slices:                      113  out of   8672     1%  
+ Number of Slice Flip Flops:             82  out of  17344     0%  
+ Number of 4 input LUTs:                214  out of  17344     1%  
  Number of IOs:                          12
  Number of bonded IOBs:                  12  out of    250     4%  
  Number of GCLKs:                         1  out of     24     4%  
@@ -474,7 +485,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 84    |
+clk                                | BUFGP                  | 82    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -482,16 +493,16 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-btn<3>                             | IBUF                   | 84    |
+btn<3>                             | IBUF                   | 82    |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 5.505ns (Maximum Frequency: 181.655MHz)
-   Minimum input arrival time before clock: 3.517ns
-   Maximum output required time after clock: 6.355ns
+   Minimum period: 5.569ns (Maximum Frequency: 179.575MHz)
+   Minimum input arrival time before clock: 3.193ns
+   Maximum output required time after clock: 6.356ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -500,10 +511,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 5.505ns (frequency: 181.655MHz)
-  Total number of paths / destination ports: 1357 / 84
+  Clock period: 5.569ns (frequency: 179.575MHz)
+  Total number of paths / destination ports: 1278 / 82
 -------------------------------------------------------------------------
-Delay:               5.505ns (Levels of Logic = 4)
+Delay:               5.569ns (Levels of Logic = 4)
   Source:            mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_5 (FF)
   Destination:       mouse_unit/ps2_rxtx_unit/ps2_tx_unit/b_reg_0 (FF)
   Source Clock:      clk rising
@@ -514,20 +525,20 @@ Delay:               5.505ns (Levels of Logic = 4)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q              4   0.514   0.651  mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_5 (mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_5)
-     LUT4_D:I0->O          5   0.612   0.541  mouse_unit/ps2_rxtx_unit/ps2_rx_unit/fall_edge31 (mouse_unit/ps2_rxtx_unit/ps2_rx_unit/fall_edge31)
+     LUT4_D:I0->O          7   0.612   0.605  mouse_unit/ps2_rxtx_unit/ps2_tx_unit/fall_edge31 (mouse_unit/ps2_rxtx_unit/ps2_rx_unit/fall_edge31)
      LUT4:I3->O            9   0.612   0.700  mouse_unit/ps2_rxtx_unit/ps2_tx_unit/fall_edge33 (mouse_unit/ps2_rxtx_unit/ps2_tx_unit/fall_edge)
      LUT4_D:I3->O          2   0.612   0.383  mouse_unit/ps2_rxtx_unit/ps2_tx_unit/b_reg_mux0000<0>1 (N2)
      LUT4:I3->O            1   0.612   0.000  mouse_unit/ps2_rxtx_unit/ps2_tx_unit/b_reg_mux0000<3>1 (mouse_unit/ps2_rxtx_unit/ps2_tx_unit/b_reg_mux0000<3>)
      FDC:D                     0.268          mouse_unit/ps2_rxtx_unit/ps2_tx_unit/b_reg_3
     ----------------------------------------
-    Total                      5.505ns (3.230ns logic, 2.275ns route)
-                                       (58.7% logic, 41.3% route)
+    Total                      5.569ns (3.230ns logic, 2.339ns route)
+                                       (58.0% logic, 42.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 3 / 2
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              3.517ns (Levels of Logic = 3)
+Offset:              3.193ns (Levels of Logic = 3)
   Source:            ps2d (PAD)
   Destination:       mouse_unit/ps2_rxtx_unit/ps2_rx_unit/b_reg_10 (FF)
   Destination Clock: clk rising
@@ -536,19 +547,19 @@ Offset:              3.517ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O           2   1.106   0.532  ps2d_IOBUF (N86)
-     LUT4:I0->O            1   0.612   0.387  mouse_unit/ps2_rxtx_unit/ps2_rx_unit/b_reg_mux0000<10>1_SW0 (N107)
-     LUT4:I2->O            1   0.612   0.000  mouse_unit/ps2_rxtx_unit/ps2_rx_unit/b_reg_mux0000<10>1 (mouse_unit/ps2_rxtx_unit/ps2_rx_unit/b_reg_mux0000<10>)
+     IOBUF:IO->O           1   1.106   0.426  ps2d_IOBUF (N84)
+     LUT4_L:I1->LO         1   0.612   0.169  mouse_unit/ps2_rxtx_unit/ps2_rx_unit/b_reg_mux0000<10>1_SW0 (N107)
+     LUT4:I1->O            1   0.612   0.000  mouse_unit/ps2_rxtx_unit/ps2_rx_unit/b_reg_mux0000<10>1 (mouse_unit/ps2_rxtx_unit/ps2_rx_unit/b_reg_mux0000<10>)
      FDC:D                     0.268          mouse_unit/ps2_rxtx_unit/ps2_rx_unit/b_reg_10
     ----------------------------------------
-    Total                      3.517ns (2.598ns logic, 0.919ns route)
-                                       (73.9% logic, 26.1% route)
+    Total                      3.193ns (2.598ns logic, 0.595ns route)
+                                       (81.4% logic, 18.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 36 / 10
 -------------------------------------------------------------------------
-Offset:              6.355ns (Levels of Logic = 2)
+Offset:              6.356ns (Levels of Logic = 2)
   Source:            mouse_unit/ps2_rxtx_unit/ps2_tx_unit/state_reg_FSM_FFd3 (FF)
   Destination:       ps2c (PAD)
   Source Clock:      clk rising
@@ -557,24 +568,25 @@ Offset:              6.355ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             30   0.514   1.224  mouse_unit/ps2_rxtx_unit/ps2_tx_unit/state_reg_FSM_FFd3 (mouse_unit/ps2_rxtx_unit/ps2_tx_unit/state_reg_FSM_FFd3)
+     FDC:C->Q             33   0.514   1.225  mouse_unit/ps2_rxtx_unit/ps2_tx_unit/state_reg_FSM_FFd3 (mouse_unit/ps2_rxtx_unit/ps2_tx_unit/state_reg_FSM_FFd3)
      LUT2:I0->O           13   0.612   0.836  mouse_unit/ps2_rxtx_unit/ps2_tx_unit/tri_c_inv1 (mouse_unit/ps2_rxtx_unit/ps2_tx_unit/tri_c_inv)
      IOBUF:T->IO               3.169          ps2c_IOBUF (ps2c)
     ----------------------------------------
-    Total                      6.355ns (4.295ns logic, 2.060ns route)
+    Total                      6.356ns (4.295ns logic, 2.061ns route)
                                        (67.6% logic, 32.4% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.49 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.61 secs
  
 --> 
 
-Total memory usage is 4541632 kilobytes
+
+Total memory usage is 529072 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   18 (   0 filtered)
+Number of warnings :   28 (   0 filtered)
 Number of infos    :    8 (   0 filtered)
 

@@ -1,0 +1,89 @@
+V3 49
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_comps.vhd 2020/02/01.15:00:48 P.20131013
+PH dist_mem_gen_v7_2/dist_mem_comps 1580565654 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_comps.vhd \
+      PB ieee/std_logic_1164 1381692176 CD rom CD spram CD dpram CD sdpram CD srlram \
+      CD srl_block PB dist_mem_gen_v7_2/dist_mem_utils 1580565653
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd 2020/02/01.15:00:49 P.20131013
+EN dist_mem_gen_v7_2/dist_mem_gen_v7_2 1580565670 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd \
+      PB ieee/std_logic_1164 1381692176 LB dist_mem_gen_v7_2
+AR dist_mem_gen_v7_2/dist_mem_gen_v7_2/xilinx 1580565671 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd \
+      EN dist_mem_gen_v7_2/dist_mem_gen_v7_2 1580565670 CP dist_mem_gen_v7_2_xst
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2_xst.vhd 2020/02/01.15:00:49 P.20131013
+EN dist_mem_gen_v7_2/dist_mem_gen_v7_2_xst 1580565668 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2_xst.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PH dist_mem_gen_v7_2/dist_mem_comps 1580565654 \
+      PB dist_mem_gen_v7_2/dist_mem_utils 1580565653
+AR dist_mem_gen_v7_2/dist_mem_gen_v7_2_xst/rtl 1580565669 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2_xst.vhd \
+      EN dist_mem_gen_v7_2/dist_mem_gen_v7_2_xst 1580565668 CP rom CP spram \
+      CP dpram CP srlram CP sdpram
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2_xst_comp.vhd 2020/02/01.15:00:49 P.20131013
+PH dist_mem_gen_v7_2/dist_mem_gen_v7_2_xst_comp 1580565667 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2_xst_comp.vhd \
+      PB ieee/std_logic_1164 1381692176 CD dist_mem_gen_v7_2_xst
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_utils.vhd 2020/02/01.15:00:48 P.20131013
+PH dist_mem_gen_v7_2/dist_mem_utils 1580565652 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_utils.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB std \
+      PB std/TEXTIO 1381692176
+PB dist_mem_gen_v7_2/dist_mem_utils 1580565653 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_utils.vhd \
+      PH dist_mem_gen_v7_2/dist_mem_utils 1580565652
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dpram/dpram.vhd 2020/02/01.15:00:48 P.20131013
+EN dist_mem_gen_v7_2/dpram 1580565659 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dpram/dpram.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB std \
+      PB std/TEXTIO 1381692176 PH dist_mem_gen_v7_2/dist_mem_comps 1580565654 \
+      PB dist_mem_gen_v7_2/dist_mem_utils 1580565653
+AR dist_mem_gen_v7_2/dpram/rtl 1580565660 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dpram/dpram.vhd \
+      EN dist_mem_gen_v7_2/dpram 1580565659
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/rom/rom.vhd 2020/02/01.15:00:48 P.20131013
+EN dist_mem_gen_v7_2/rom 1580565655 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/rom/rom.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB std \
+      PB std/TEXTIO 1381692176 PB ieee/STD_LOGIC_TEXTIO 1381692180 \
+      PB dist_mem_gen_v7_2/dist_mem_utils 1580565653
+AR dist_mem_gen_v7_2/rom/rtl 1580565656 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/rom/rom.vhd \
+      EN dist_mem_gen_v7_2/rom 1580565655
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/sdpram/sdpram.vhd 2020/02/01.15:00:48 P.20131013
+EN dist_mem_gen_v7_2/sdpram 1580565661 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/sdpram/sdpram.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB std \
+      PB std/TEXTIO 1381692176 PH dist_mem_gen_v7_2/dist_mem_comps 1580565654 \
+      PB dist_mem_gen_v7_2/dist_mem_utils 1580565653
+AR dist_mem_gen_v7_2/sdpram/rtl 1580565662 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/sdpram/sdpram.vhd \
+      EN dist_mem_gen_v7_2/sdpram 1580565661
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/spram/spram.vhd 2020/02/01.15:00:48 P.20131013
+EN dist_mem_gen_v7_2/spram 1580565657 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/spram/spram.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB std \
+      PB std/TEXTIO 1381692176 PH dist_mem_gen_v7_2/dist_mem_comps 1580565654 \
+      PB dist_mem_gen_v7_2/dist_mem_utils 1580565653
+AR dist_mem_gen_v7_2/spram/rtl 1580565658 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/spram/spram.vhd \
+      EN dist_mem_gen_v7_2/spram 1580565657
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/srlram/srlram.vhd 2020/02/01.15:00:49 P.20131013
+EN dist_mem_gen_v7_2/srlram 1580565665 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/srlram/srlram.vhd \
+      PB ieee/std_logic_1164 1381692176 PH dist_mem_gen_v7_2/dist_mem_comps 1580565654 \
+      PB dist_mem_gen_v7_2/dist_mem_utils 1580565653
+AR dist_mem_gen_v7_2/srlram/rtl 1580565666 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/srlram/srlram.vhd \
+      EN dist_mem_gen_v7_2/srlram 1580565665 CP srl_block
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/srlram/srl_block.vhd 2020/02/01.15:00:48 P.20131013
+EN dist_mem_gen_v7_2/srl_block 1580565663 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/srlram/srl_block.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB std \
+      PB std/TEXTIO 1381692176 PB ieee/STD_LOGIC_TEXTIO 1381692180 LB unisim \
+      PH unisim/VCOMPONENTS 1381692182 PH dist_mem_gen_v7_2/dist_mem_comps 1580565654 \
+      PB dist_mem_gen_v7_2/dist_mem_utils 1580565653
+AR dist_mem_gen_v7_2/srl_block/rtl 1580565664 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/srlram/srl_block.vhd \
+      EN dist_mem_gen_v7_2/srl_block 1580565663 CP srl16e

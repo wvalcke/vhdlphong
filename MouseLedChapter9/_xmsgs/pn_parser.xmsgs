@@ -8,7 +8,19 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_05_mouse_led.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch08_01_ps2_rx.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_01_ps2_tx.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_02_ps2_rxtx.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_04_mouse.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_05_mouse_led.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

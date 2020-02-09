@@ -78,6 +78,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1578993637" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1578993637">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1578993637" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="1480739766493706467" xil_pn:start_ts="1578993637">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -103,7 +104,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1578993688" xil_pn:in_ck="-387824577006067925" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-5200591990547160087" xil_pn:start_ts="1578993678">
+    <transform xil_pn:end_ts="1579340839" xil_pn:in_ck="-387824577006067925" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="7581523855637327605" xil_pn:start_ts="1579340834">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -117,7 +118,6 @@
       <outfile xil_pn:name="mouse_led.stx"/>
       <outfile xil_pn:name="mouse_led.syr"/>
       <outfile xil_pn:name="mouse_led.xst"/>
-      <outfile xil_pn:name="mouse_led_vhdl.prj"/>
       <outfile xil_pn:name="mouse_led_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
@@ -126,7 +126,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1578993697" xil_pn:in_ck="3519245693557247032" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="5069903495226650138" xil_pn:start_ts="1578993690">
+    <transform xil_pn:end_ts="1579340844" xil_pn:in_ck="3519245693557247032" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="5069903495226650138" xil_pn:start_ts="1579340841">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -136,7 +136,7 @@
       <outfile xil_pn:name="mouse_led.ngd"/>
       <outfile xil_pn:name="mouse_led_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1578993703" xil_pn:in_ck="3519245693557247033" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="7728334167582700538" xil_pn:start_ts="1578993697">
+    <transform xil_pn:end_ts="1579340847" xil_pn:in_ck="3519245693557247033" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="7728334167582700538" xil_pn:start_ts="1579340844">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -151,7 +151,7 @@
       <outfile xil_pn:name="mouse_led_summary.xml"/>
       <outfile xil_pn:name="mouse_led_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1578993728" xil_pn:in_ck="8418962552118038482" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="6268780068511726196" xil_pn:start_ts="1578993703">
+    <transform xil_pn:end_ts="1579340859" xil_pn:in_ck="8418962552118038482" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="6268780068511726196" xil_pn:start_ts="1579340847">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -165,7 +165,7 @@
       <outfile xil_pn:name="mouse_led_pad.txt"/>
       <outfile xil_pn:name="mouse_led_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1578993740" xil_pn:in_ck="3127368517359795264" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="5775731546441462550" xil_pn:start_ts="1578993730">
+    <transform xil_pn:end_ts="1579340866" xil_pn:in_ck="3127368517359795264" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1579340862">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
@@ -177,7 +177,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1578993728" xil_pn:in_ck="3519245693557246901" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1578993724">
+    <transform xil_pn:end_ts="1579340859" xil_pn:in_ck="3519245693557246901" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1579340858">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

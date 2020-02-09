@@ -1,0 +1,15 @@
+V3 7
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/vgacircuit1/list_ch12_01_vga_sync.vhd 2020/02/01.12:18:30 P.20131013
+EN work/vga_sync 1580555916 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/vgacircuit1/list_ch12_01_vga_sync.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/vga_sync/arch 1580555917 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/vgacircuit1/list_ch12_01_vga_sync.vhd \
+      EN work/vga_sync 1580555916
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/vgacircuit1/list_ch12_02_vga_sync_test.vhd 2020/02/01.11:18:58 P.20131013
+EN work/vga_test 1580555918 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/vgacircuit1/list_ch12_02_vga_sync_test.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/vga_test/arch 1580555919 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/vgacircuit1/list_ch12_02_vga_sync_test.vhd \
+      EN work/vga_test 1580555918 CP work/vga_sync

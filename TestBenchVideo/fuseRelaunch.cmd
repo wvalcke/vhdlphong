@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/dumbo/XilinxProjects/PhongVhdlBook/TestBenchVideo/test_top_isim_beh.exe" -prj "/home/dumbo/XilinxProjects/PhongVhdlBook/TestBenchVideo/test_top_beh.prj" "work.test_top" 

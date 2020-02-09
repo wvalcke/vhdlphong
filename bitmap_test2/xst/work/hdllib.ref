@@ -1,0 +1,17 @@
+AR dot_top arch /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch12_08_dot_top.vhd sub00/vhpl10 1580637759
+EN xilinx_dual_port_ram_sync NULL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch11_04_x_ram_2p_sync.vhd sub00/vhpl03 1580598087
+AR xilinx_dual_port_ram_sync beh_arch /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch11_04_x_ram_2p_sync.vhd sub00/vhpl04 1580598088
+EN vga_sync NULL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch12_01_vga_sync.vhd sub00/vhpl07 1580637752
+EN bitmap_gen NULL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch12_07_dot_gra.vhd sub00/vhpl05 1580637754
+EN x7seg NULL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/x7seg.vhd sub00/vhpl11 1580637756
+EN dist_mem_gen_v7_2 NULL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/ipcore_dir/dist_mem_gen_v7_2.vhd sub00/vhpl13 1580599295
+AR dist_mem_gen_v7_2 dist_mem_gen_v7_2_a /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/ipcore_dir/dist_mem_gen_v7_2.vhd sub00/vhpl14 1580599296
+EN debounce NULL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch06_01_02_debounce.vhd sub00/vhpl00 1580637747
+AR blk_mem_gen_v7_3 blk_mem_gen_v7_3_a /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/ipcore_dir/blk_mem_gen_v7_3.vhd sub00/vhpl16 1580637751
+AR debounce fsmd_arch /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch06_01_02_debounce.vhd sub00/vhpl02 1580637749
+AR bitmap_gen dual_port_ram_arch /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch12_07_dot_gra.vhd sub00/vhpl06 1580637755
+EN dot_top NULL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch12_08_dot_top.vhd sub00/vhpl09 1580637758
+AR vga_sync arch /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch12_01_vga_sync.vhd sub00/vhpl08 1580637753
+AR x7seg behavioral /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/x7seg.vhd sub00/vhpl12 1580637757
+EN blk_mem_gen_v7_3 NULL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/ipcore_dir/blk_mem_gen_v7_3.vhd sub00/vhpl15 1580637750
+AR debounce exp_fsmd_arch /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch06_01_02_debounce.vhd sub00/vhpl01 1580637748

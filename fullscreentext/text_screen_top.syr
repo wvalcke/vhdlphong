@@ -1,0 +1,638 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: text_screen_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "text_screen_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "text_screen_top"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-5-fg320
+
+---- Source Options
+Top Module Name                    : text_screen_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"coregen"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch06_01_02_debounce.vhd" in Library work.
+Architecture exp_fsmd_arch of Entity debounce is up to date.
+Architecture fsmd_arch of Entity debounce is up to date.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_01_font_rom.vhd" in Library work.
+Architecture arch of Entity font_rom is up to date.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/coregen/dist_mem_gen_v7_2.vhd" in Library work.
+Architecture dist_mem_gen_v7_2_a of Entity dist_mem_gen_v7_2 is up to date.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch12_01_vga_sync.vhd" in Library work.
+Architecture arch of Entity vga_sync is up to date.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_04_text_scr_gen.vhd" in Library work.
+Architecture arch of Entity text_screen_gen is up to date.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_05_text_scr_top.vhd" in Library work.
+Entity <text_screen_top> compiled.
+Entity <text_screen_top> (Architecture <arch>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <text_screen_top> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <vga_sync> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <text_screen_gen> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <debounce> in library <work> (architecture <fsmd_arch>).
+
+Analyzing hierarchy for entity <font_rom> in library <work> (architecture <arch>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <text_screen_top> in library <work> (Architecture <arch>).
+Entity <text_screen_top> analyzed. Unit <text_screen_top> generated.
+
+Analyzing Entity <vga_sync> in library <work> (Architecture <arch>).
+Entity <vga_sync> analyzed. Unit <vga_sync> generated.
+
+Analyzing Entity <text_screen_gen> in library <work> (Architecture <arch>).
+WARNING:Xst:753 - "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_04_text_scr_gen.vhd" line 44: Unconnected output port 'db_level' of component 'debounce'.
+WARNING:Xst:753 - "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_04_text_scr_gen.vhd" line 47: Unconnected output port 'db_level' of component 'debounce'.
+WARNING:Xst:753 - "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_04_text_scr_gen.vhd" line 60: Unconnected output port 'spo' of component 'dist_mem_gen_v7_2'.
+WARNING:Xst:2211 - "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_04_text_scr_gen.vhd" line 60: Instantiating black box module <dist_mem_gen_v7_2>.
+Entity <text_screen_gen> analyzed. Unit <text_screen_gen> generated.
+
+Analyzing Entity <debounce> in library <work> (Architecture <fsmd_arch>).
+Entity <debounce> analyzed. Unit <debounce> generated.
+
+Analyzing Entity <font_rom> in library <work> (Architecture <arch>).
+Entity <font_rom> analyzed. Unit <font_rom> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <vga_sync>.
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch12_01_vga_sync.vhd".
+    Found 10-bit up counter for signal <h_count_reg>.
+    Found 10-bit comparator greatequal for signal <h_sync_next$cmp_ge0000> created at line 90.
+    Found 10-bit comparator lessequal for signal <h_sync_next$cmp_le0000> created at line 90.
+    Found 1-bit register for signal <h_sync_reg>.
+    Found 1-bit register for signal <mod2_reg>.
+    Found 10-bit up counter for signal <v_count_reg>.
+    Found 10-bit comparator greatequal for signal <v_sync_next$cmp_ge0000> created at line 94.
+    Found 10-bit comparator lessequal for signal <v_sync_next$cmp_le0000> created at line 94.
+    Found 1-bit register for signal <v_sync_reg>.
+    Found 10-bit comparator less for signal <video_on$cmp_lt0000> created at line 99.
+    Found 10-bit comparator less for signal <video_on$cmp_lt0001> created at line 99.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <vga_sync> synthesized.
+
+
+Synthesizing Unit <debounce>.
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch06_01_02_debounce.vhd".
+    Found finite state machine <FSM_0> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | zero                                           |
+    | Power Up State     | zero                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 21-bit subtractor for signal <q_next$share0000> created at line 109.
+    Found 21-bit register for signal <q_reg>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <debounce> synthesized.
+
+
+Synthesizing Unit <font_rom>.
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_01_font_rom.vhd".
+    Found 2048x8-bit ROM for signal <data$rom0000> created at line 2213.
+    Found 11-bit register for signal <addr_reg>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  11 D-type flip-flop(s).
+Unit <font_rom> synthesized.
+
+
+Synthesizing Unit <text_screen_gen>.
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_04_text_scr_gen.vhd".
+WARNING:Xst:646 - Signal <pix_y2_reg<9>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pix_y2_reg<3:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 7-bit up counter for signal <cur_x_reg>.
+    Found 5-bit up counter for signal <cur_y_reg>.
+    Found 5-bit comparator equal for signal <cursor_on$cmp_eq0000> created at line 113.
+    Found 7-bit comparator equal for signal <cursor_on$cmp_eq0001> created at line 113.
+    Found 1-bit 8-to-1 multiplexer for signal <font_bit>.
+    Found 10-bit register for signal <pix_x1_reg>.
+    Found 10-bit register for signal <pix_x2_reg>.
+    Found 10-bit register for signal <pix_y1_reg>.
+    Found 10-bit register for signal <pix_y2_reg>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  40 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <text_screen_gen> synthesized.
+
+
+Synthesizing Unit <text_screen_top>.
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_05_text_scr_top.vhd".
+    Found 8-bit register for signal <rgb_reg>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <text_screen_top> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 2048x8-bit ROM                                        : 1
+# Adders/Subtractors                                   : 2
+ 21-bit subtractor                                     : 2
+# Counters                                             : 4
+ 10-bit up counter                                     : 2
+ 5-bit up counter                                      : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 11
+ 1-bit register                                        : 3
+ 10-bit register                                       : 4
+ 11-bit register                                       : 1
+ 21-bit register                                       : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 8
+ 10-bit comparator greatequal                          : 2
+ 10-bit comparator less                                : 2
+ 10-bit comparator lessequal                           : 2
+ 5-bit comparator equal                                : 1
+ 7-bit comparator equal                                : 1
+# Multiplexers                                         : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <text_gen_unit/debounce_unit0/state_reg/FSM> on signal <state_reg[1:2]> with gray encoding.
+Optimizing FSM <text_gen_unit/debounce_unit1/state_reg/FSM> on signal <state_reg[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ zero  | 00
+ wait0 | 10
+ one   | 11
+ wait1 | 01
+-------------------
+Reading core <coregen/dist_mem_gen_v7_2.ngc>.
+Loading core <dist_mem_gen_v7_2> for timing and area information for instance <video_ram>.
+WARNING:Xst:1710 - FF/Latch <rgb_reg_0> (without init value) has a constant value of 0 in block <text_screen_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rgb_reg_1> (without init value) has a constant value of 0 in block <text_screen_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rgb_reg_5> (without init value) has a constant value of 0 in block <text_screen_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rgb_reg_6> (without init value) has a constant value of 0 in block <text_screen_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rgb_reg_7> (without init value) has a constant value of 0 in block <text_screen_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <pix_y1_reg_0> of sequential type is unconnected in block <text_gen_unit>.
+WARNING:Xst:2677 - Node <pix_y1_reg_1> of sequential type is unconnected in block <text_gen_unit>.
+WARNING:Xst:2677 - Node <pix_y1_reg_2> of sequential type is unconnected in block <text_gen_unit>.
+WARNING:Xst:2677 - Node <pix_y1_reg_3> of sequential type is unconnected in block <text_gen_unit>.
+WARNING:Xst:2677 - Node <pix_y1_reg_9> of sequential type is unconnected in block <text_gen_unit>.
+WARNING:Xst:2677 - Node <pix_y2_reg_0> of sequential type is unconnected in block <text_gen_unit>.
+WARNING:Xst:2677 - Node <pix_y2_reg_1> of sequential type is unconnected in block <text_gen_unit>.
+WARNING:Xst:2677 - Node <pix_y2_reg_2> of sequential type is unconnected in block <text_gen_unit>.
+WARNING:Xst:2677 - Node <pix_y2_reg_3> of sequential type is unconnected in block <text_gen_unit>.
+WARNING:Xst:2677 - Node <pix_y2_reg_9> of sequential type is unconnected in block <text_gen_unit>.
+
+Synthesizing (advanced) Unit <font_rom>.
+INFO:Xst:3044 - The ROM <Mrom_data_rom0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <addr_reg>.
+INFO:Xst:3225 - The RAM <Mrom_data_rom0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <font_rom> synthesized (advanced).
+WARNING:Xst:2677 - Node <pix_y1_reg_0> of sequential type is unconnected in block <text_screen_gen>.
+WARNING:Xst:2677 - Node <pix_y1_reg_1> of sequential type is unconnected in block <text_screen_gen>.
+WARNING:Xst:2677 - Node <pix_y1_reg_2> of sequential type is unconnected in block <text_screen_gen>.
+WARNING:Xst:2677 - Node <pix_y1_reg_3> of sequential type is unconnected in block <text_screen_gen>.
+WARNING:Xst:2677 - Node <pix_y1_reg_9> of sequential type is unconnected in block <text_screen_gen>.
+WARNING:Xst:2677 - Node <pix_y2_reg_0> of sequential type is unconnected in block <text_screen_gen>.
+WARNING:Xst:2677 - Node <pix_y2_reg_1> of sequential type is unconnected in block <text_screen_gen>.
+WARNING:Xst:2677 - Node <pix_y2_reg_2> of sequential type is unconnected in block <text_screen_gen>.
+WARNING:Xst:2677 - Node <pix_y2_reg_3> of sequential type is unconnected in block <text_screen_gen>.
+WARNING:Xst:2677 - Node <pix_y2_reg_9> of sequential type is unconnected in block <text_screen_gen>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# RAMs                                                 : 1
+ 2048x8-bit single-port block RAM                      : 1
+# Adders/Subtractors                                   : 2
+ 21-bit subtractor                                     : 2
+# Counters                                             : 4
+ 10-bit up counter                                     : 2
+ 5-bit up counter                                      : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 83
+ Flip-Flops                                            : 83
+# Comparators                                          : 8
+ 10-bit comparator greatequal                          : 2
+ 10-bit comparator less                                : 2
+ 10-bit comparator lessequal                           : 2
+ 5-bit comparator equal                                : 1
+ 7-bit comparator equal                                : 1
+# Multiplexers                                         : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <text_screen_top> ...
+
+Optimizing unit <vga_sync> ...
+
+Optimizing unit <debounce> ...
+
+Optimizing unit <text_screen_gen> ...
+WARNING:Xst:1710 - FF/Latch <rgb_reg_0> (without init value) has a constant value of 0 in block <text_screen_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rgb_reg_1> (without init value) has a constant value of 0 in block <text_screen_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rgb_reg_5> (without init value) has a constant value of 0 in block <text_screen_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rgb_reg_6> (without init value) has a constant value of 0 in block <text_screen_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rgb_reg_7> (without init value) has a constant value of 0 in block <text_screen_top>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <rgb_reg_2> in Unit <text_screen_top> is equivalent to the following 2 FFs/Latches, which will be removed : <rgb_reg_3> <rgb_reg_4> 
+Found area constraint ratio of 100 (+ 5) on block text_screen_top, actual ratio is 15.
+
+Final Macro Processing ...
+
+Processing Unit <text_screen_top> :
+	Found 2-bit shift register for signal <text_gen_unit/pix_y2_reg_8>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_y2_reg_7>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_y2_reg_6>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_y2_reg_5>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_y2_reg_4>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_x2_reg_9>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_x2_reg_8>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_x2_reg_7>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_x2_reg_6>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_x2_reg_5>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_x2_reg_4>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_x2_reg_3>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_x2_reg_2>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_x2_reg_1>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_x2_reg_0>.
+Unit <text_screen_top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 82
+ Flip-Flops                                            : 82
+# Shift Registers                                      : 15
+ 2-bit shift register                                  : 15
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : text_screen_top.ngr
+Top Level Output File Name         : text_screen_top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 22
+
+Cell Usage :
+# BELS                             : 4516
+#      BUF                         : 54
+#      GND                         : 2
+#      INV                         : 47
+#      LUT1                        : 20
+#      LUT2                        : 30
+#      LUT2_D                      : 2
+#      LUT3                        : 1861
+#      LUT3_D                      : 2
+#      LUT4                        : 378
+#      LUT4_D                      : 1
+#      MUXCY                       : 70
+#      MUXF5                       : 1187
+#      MUXF6                       : 463
+#      MUXF7                       : 224
+#      MUXF8                       : 112
+#      VCC                         : 1
+#      XORCY                       : 62
+# FlipFlops/Latches                : 111
+#      FD                          : 29
+#      FDC                         : 49
+#      FDCE                        : 20
+#      FDE                         : 1
+#      FDRE                        : 12
+# RAMS                             : 1793
+#      RAM16X1D                    : 1792
+#      RAMB16_S9                   : 1
+# Shift Registers                  : 15
+#      SRL16                       : 15
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 21
+#      IBUF                        : 11
+#      OBUF                        : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-5 
+
+ Number of Slices:                     1314  out of   8672    15%  
+ Number of Slice Flip Flops:            111  out of  17344     0%  
+ Number of 4 input LUTs:               5940  out of  17344    34%  
+    Number used as logic:              2341
+    Number used as Shift registers:      15
+    Number used as RAMs:               3584
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of    250     8%  
+ Number of BRAMs:                         1  out of     28     3%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1919  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+btn<3>                             | IBUF                   | 69    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 9.290ns (Maximum Frequency: 107.644MHz)
+   Minimum input arrival time before clock: 8.723ns
+   Maximum output required time after clock: 4.134ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 9.290ns (frequency: 107.644MHz)
+  Total number of paths / destination ports: 70272 / 16308
+-------------------------------------------------------------------------
+Delay:               9.290ns (Levels of Logic = 11)
+  Source:            text_gen_unit/cur_x_reg_0 (FF)
+  Destination:       text_gen_unit/video_ram/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/qspo_int_6 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: text_gen_unit/cur_x_reg_0 to text_gen_unit/video_ram/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/qspo_int_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q           500   0.514   1.199  text_gen_unit/cur_x_reg_0 (text_gen_unit/cur_x_reg_0)
+     begin scope: 'text_gen_unit/video_ram'
+     BUF:I->O            492   0.612   1.196  a<0>_10 (a<0>_10)
+     RAM16X1D:A0->SPO      1   1.065   0.426  U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram1473 (U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/N3202)
+     LUT3:I1->O            1   0.612   0.000  U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/inst_LPM_MUX5_15 (U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/inst_LPM_MUX5_15)
+     MUXF5:I0->O           1   0.278   0.000  U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/inst_LPM_MUX5_13_f5 (U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/inst_LPM_MUX5_13_f5)
+     MUXF6:I0->O           1   0.451   0.000  U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/inst_LPM_MUX5_11_f6 (U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/inst_LPM_MUX5_11_f6)
+     MUXF7:I0->O           1   0.451   0.000  U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/inst_LPM_MUX5_9_f7 (U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/inst_LPM_MUX5_9_f7)
+     MUXF8:I0->O           1   0.451   0.426  U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/inst_LPM_MUX5_7_f8 (U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/inst_LPM_MUX5_7_f8)
+     LUT3:I1->O            1   0.612   0.000  U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/inst_LPM_MUX5_4 (U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/inst_LPM_MUX5_4)
+     MUXF5:I1->O           1   0.278   0.000  U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/inst_LPM_MUX5_3_f5 (U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/inst_LPM_MUX5_3_f5)
+     MUXF6:I1->O           1   0.451   0.000  U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/inst_LPM_MUX5_2_f6 (spo<5>)
+     FD:D                      0.268          U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/qspo_int_5
+    ----------------------------------------
+    Total                      9.290ns (6.043ns logic, 3.247ns route)
+                                       (65.0% logic, 35.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 4684 / 3654
+-------------------------------------------------------------------------
+Offset:              8.723ns (Levels of Logic = 7)
+  Source:            btn<0> (PAD)
+  Destination:       text_gen_unit/cur_x_reg_6 (FF)
+  Destination Clock: clk rising
+
+  Data Path: btn<0> to text_gen_unit/cur_x_reg_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.106   0.754  btn_0_IBUF (btn_0_IBUF)
+     LUT3_D:I0->O         23   0.612   1.174  text_gen_unit/debounce_unit0/q_next<0>21 (text_gen_unit/debounce_unit0/N11)
+     LUT4:I0->O            1   0.612   0.000  text_gen_unit/debounce_unit0/q_next<20>1_SW0_F (N26)
+     MUXF5:I0->O           1   0.278   0.360  text_gen_unit/debounce_unit0/q_next<20>1_SW0 (N14)
+     LUT4:I3->O            1   0.612   0.000  text_gen_unit/debounce_unit0/state_reg_cmp_eq0000_wg_lut<5> (text_gen_unit/debounce_unit0/state_reg_cmp_eq0000_wg_lut<5>)
+     MUXCY:S->O            3   0.752   0.454  text_gen_unit/debounce_unit0/state_reg_cmp_eq0000_wg_cy<5> (text_gen_unit/debounce_unit0/state_reg_cmp_eq0000)
+     LUT4:I3->O            7   0.612   0.602  text_gen_unit/cur_x_reg_and0000 (text_gen_unit/cur_x_reg_and0000)
+     FDRE:R                    0.795          text_gen_unit/cur_x_reg_0
+    ----------------------------------------
+    Total                      8.723ns (5.379ns logic, 3.344ns route)
+                                       (61.7% logic, 38.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              4.134ns (Levels of Logic = 1)
+  Source:            rgb_reg_2 (FF)
+  Destination:       vgagreen<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: rgb_reg_2 to vgagreen<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.514   0.451  rgb_reg_2 (rgb_reg_2)
+     OBUF:I->O                 3.169          vgagreen_1_OBUF (vgagreen<1>)
+    ----------------------------------------
+    Total                      4.134ns (3.683ns logic, 0.451ns route)
+                                       (89.1% logic, 10.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 23.00 secs
+Total CPU time to Xst completion: 22.64 secs
+ 
+--> 
+
+
+Total memory usage is 618224 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   36 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

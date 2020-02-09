@@ -1,0 +1,4 @@
+EN vga_sync NULL /home/dumbo/XilinxProjects/PhongVhdlBook/vgacircuit1/list_ch12_01_vga_sync.vhd sub00/vhpl00 1580555916
+EN vga_test NULL /home/dumbo/XilinxProjects/PhongVhdlBook/vgacircuit1/list_ch12_02_vga_sync_test.vhd sub00/vhpl02 1580555918
+AR vga_sync arch /home/dumbo/XilinxProjects/PhongVhdlBook/vgacircuit1/list_ch12_01_vga_sync.vhd sub00/vhpl01 1580555917
+AR vga_test arch /home/dumbo/XilinxProjects/PhongVhdlBook/vgacircuit1/list_ch12_02_vga_sync_test.vhd sub00/vhpl03 1580555919

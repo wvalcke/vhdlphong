@@ -1,0 +1,5 @@
+set -tmpdir "/home/dumbo/XilinxProjects/PhongVhdlBook/vgacircuit1/xst/projnav.tmp"
+set -xsthdpdir "/home/dumbo/XilinxProjects/PhongVhdlBook/vgacircuit1/xst"
+elaborate
+-ifn vga_sync.prj
+-ifmt mixed

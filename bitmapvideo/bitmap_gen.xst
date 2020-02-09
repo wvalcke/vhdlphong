@@ -1,0 +1,5 @@
+set -tmpdir "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/xst/projnav.tmp"
+set -xsthdpdir "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/xst"
+elaborate
+-ifn bitmap_gen.prj
+-ifmt mixed

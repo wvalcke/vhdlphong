@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-01-14T10:18:33</DateModified>
+  <DateModified>2020-01-18T10:35:31</DateModified>
   <ModuleName>mouse_led</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/BEP/fpga/vhdlphong/MouseLedChapter9/iseconfig/mouse_led.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/BEP/fpga/vhdlphong/MouseLedChapter9</ImplementationReportsDirectory>
+  <SavedFilePath>/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/iseconfig/mouse_led.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/</ImplementationReportsDirectory>
   <DateInitialized>2020-01-14T10:18:33</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

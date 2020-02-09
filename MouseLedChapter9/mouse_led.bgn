@@ -1,13 +1,13 @@
-Release 14.7 - Bitgen P.20131013 (nt64)
+Release 14.7 - Bitgen P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Loading device for application Rf_Device from file '3s1200e.nph' in environment
-C:\Xilinx\14.7\ISE_DS\ISE\.
+/opt/Xilinx/14.7/ISE_DS/ISE/.
    "mouse_led" is an NCD, version 3.2, device xc3s1200e, package fg320, speed -5
 Opened constraints file mouse_led.pcf.
 
-Tue Jan 14 10:22:14 2020
+Sat Jan 18 10:47:43 2020
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:1 -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g StartUpClk:JtagClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:No -g DriveDone:No mouse_led.ncd 
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:1 -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No mouse_led.ncd 
 
 Summary of Bitgen Options:
 +----------------------+----------------------+
@@ -23,7 +23,7 @@ Summary of Bitgen Options:
 +----------------------+----------------------+
 | ConfigRate           | 1**                  |
 +----------------------+----------------------+
-| StartupClk           | JtagClk              |
+| StartupClk           | Cclk**               |
 +----------------------+----------------------+
 | DCMShutdown          | Disable**            |
 +----------------------+----------------------+
@@ -53,7 +53,7 @@ Summary of Bitgen Options:
 +----------------------+----------------------+
 | DriveDone            | No**                 |
 +----------------------+----------------------+
-| DonePipe             | No**                 |
+| DonePipe             | Yes                  |
 +----------------------+----------------------+
 | Security             | None**               |
 +----------------------+----------------------+

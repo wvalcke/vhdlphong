@@ -1,7 +1,7 @@
-Release 14.7 Drc P.20131013 (nt64)
+Release 14.7 Drc P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue Jan 14 10:22:14 2020
+Sat Jan 18 10:47:43 2020
 
 drc -z mouse_led.ncd mouse_led.pcf
 

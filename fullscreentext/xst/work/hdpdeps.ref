@@ -1,0 +1,47 @@
+V3 24
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/coregen/dist_mem_gen_v7_2.vhd 2020/02/09.15:20:21 P.20131013
+EN work/dist_mem_gen_v7_2 1581258410 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/coregen/dist_mem_gen_v7_2.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/dist_mem_gen_v7_2/dist_mem_gen_v7_2_a 1581258411 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/coregen/dist_mem_gen_v7_2.vhd \
+      EN work/dist_mem_gen_v7_2 1581258410
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch06_01_02_debounce.vhd 2008/01/28.17:00:32 P.20131013
+EN work/debounce 1581258405 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch06_01_02_debounce.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/debounce/exp_fsmd_arch 1581258406 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch06_01_02_debounce.vhd \
+      EN work/debounce 1581258405
+AR work/debounce/fsmd_arch 1581258407 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch06_01_02_debounce.vhd \
+      EN work/debounce 1581258405
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch12_01_vga_sync.vhd 2020/02/01.12:18:30 P.20131013
+EN work/vga_sync 1581258412 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch12_01_vga_sync.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/vga_sync/arch 1581258413 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch12_01_vga_sync.vhd \
+      EN work/vga_sync 1581258412
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_01_font_rom.vhd 2020/02/02.13:44:54 P.20131013
+EN work/font_rom 1581258408 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_01_font_rom.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/font_rom/arch 1581258409 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_01_font_rom.vhd \
+      EN work/font_rom 1581258408
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_04_text_scr_gen.vhd 2020/02/09.15:26:04 P.20131013
+EN work/text_screen_gen 1581258414 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_04_text_scr_gen.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/text_screen_gen/arch 1581258415 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_04_text_scr_gen.vhd \
+      EN work/text_screen_gen 1581258414 CP work/debounce CP work/font_rom \
+      CP work/dist_mem_gen_v7_2
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_05_text_scr_top.vhd 2020/02/09.15:26:41 P.20131013
+EN work/text_screen_top 1581258416 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_05_text_scr_top.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/text_screen_top/arch 1581258417 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_05_text_scr_top.vhd \
+      EN work/text_screen_top 1581258416 CP work/vga_sync CP work/text_screen_gen

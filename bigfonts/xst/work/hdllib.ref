@@ -1,0 +1,8 @@
+EN vga_sync NULL /home/dumbo/XilinxProjects/PhongVhdlBook/bigfonts/list_ch12_01_vga_sync.vhd sub00/vhpl02 1581253865
+AR font_test_gen arch /home/dumbo/XilinxProjects/PhongVhdlBook/bigfonts/list_ch13_02_font_test_gen.vhd sub00/vhpl05 1581253868
+AR font_rom arch /home/dumbo/XilinxProjects/PhongVhdlBook/bigfonts/list_ch13_01_font_rom.vhd sub00/vhpl01 1581253864
+AR font_test_top arch /home/dumbo/XilinxProjects/PhongVhdlBook/bigfonts/list_ch13_03_font_test_top.vhd sub00/vhpl07 1581253870
+EN font_rom NULL /home/dumbo/XilinxProjects/PhongVhdlBook/bigfonts/list_ch13_01_font_rom.vhd sub00/vhpl00 1581253863
+AR vga_sync arch /home/dumbo/XilinxProjects/PhongVhdlBook/bigfonts/list_ch12_01_vga_sync.vhd sub00/vhpl03 1581253866
+EN font_test_top NULL /home/dumbo/XilinxProjects/PhongVhdlBook/bigfonts/list_ch13_03_font_test_top.vhd sub00/vhpl06 1581253869
+EN font_test_gen NULL /home/dumbo/XilinxProjects/PhongVhdlBook/bigfonts/list_ch13_02_font_test_gen.vhd sub00/vhpl04 1581253867

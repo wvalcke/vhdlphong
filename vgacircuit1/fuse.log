@@ -1,0 +1,25 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/dumbo/XilinxProjects/PhongVhdlBook/vgacircuit1/test_vga_bench_isim_beh.exe -prj /home/dumbo/XilinxProjects/PhongVhdlBook/vgacircuit1/test_vga_bench_beh.prj work.test_vga_bench 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 24
+Turning on mult-threading, number of parallel sub-compilation jobs: 48 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/dumbo/XilinxProjects/PhongVhdlBook/vgacircuit1/list_ch12_01_vga_sync.vhd" into library work
+Parsing VHDL file "/home/dumbo/XilinxProjects/PhongVhdlBook/vgacircuit1/list_ch12_02_vga_sync_test.vhd" into library work
+Parsing VHDL file "/home/dumbo/XilinxProjects/PhongVhdlBook/vgacircuit1/test_vga_bench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 97572 KB
+Fuse CPU Usage: 910 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture arch of entity vga_sync [vga_sync_default]
+Compiling architecture arch of entity vga_test [vga_test_default]
+Compiling architecture behavior of entity test_vga_bench
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 8 VHDL Units
+Built simulation executable /home/dumbo/XilinxProjects/PhongVhdlBook/vgacircuit1/test_vga_bench_isim_beh.exe
+Fuse Memory Usage: 3290704 KB
+Fuse CPU Usage: 1020 ms
+GCC CPU Usage: 290 ms

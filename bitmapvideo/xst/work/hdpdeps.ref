@@ -1,0 +1,47 @@
+V3 23
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/blk_mem_gen_v7_3.vhd 2020/02/01.14:47:45 P.20131013
+EN work/blk_mem_gen_v7_3 1580565465 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/blk_mem_gen_v7_3.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/blk_mem_gen_v7_3/blk_mem_gen_v7_3_a 1580565466 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/blk_mem_gen_v7_3.vhd \
+      EN work/blk_mem_gen_v7_3 1580565465
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/list_ch06_01_02_debounce.vhd 2008/01/28.17:00:32 P.20131013
+EN work/debounce 1580567627 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/list_ch06_01_02_debounce.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/debounce/exp_fsmd_arch 1580567628 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/list_ch06_01_02_debounce.vhd \
+      EN work/debounce 1580567627
+AR work/debounce/fsmd_arch 1580567629 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/list_ch06_01_02_debounce.vhd \
+      EN work/debounce 1580567627
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/list_ch11_04_x_ram_2p_sync.vhd 2008/01/28.17:15:10 P.20131013
+EN work/xilinx_dual_port_ram_sync 1580567630 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/list_ch11_04_x_ram_2p_sync.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/xilinx_dual_port_ram_sync/beh_arch 1580567631 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/list_ch11_04_x_ram_2p_sync.vhd \
+      EN work/xilinx_dual_port_ram_sync 1580567630
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/list_ch12_01_vga_sync.vhd 2020/02/01.12:18:30 P.20131013
+EN work/vga_sync 1580567632 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/list_ch12_01_vga_sync.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/vga_sync/arch 1580567633 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/list_ch12_01_vga_sync.vhd \
+      EN work/vga_sync 1580567632
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/list_ch12_07_dot_gra.vhd 2020/02/01.15:31:57 P.20131013
+EN work/bitmap_gen 1580567634 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/list_ch12_07_dot_gra.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/bitmap_gen/dual_port_ram_arch 1580567635 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/list_ch12_07_dot_gra.vhd \
+      EN work/bitmap_gen 1580567634 CP work/debounce \
+      CP work/xilinx_dual_port_ram_sync
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/list_ch12_08_dot_top.vhd 2020/02/01.15:33:02 P.20131013
+EN work/dot_top 1580567636 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/list_ch12_08_dot_top.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/dot_top/arch 1580567637 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/list_ch12_08_dot_top.vhd \
+      EN work/dot_top 1580567636 CP work/vga_sync CP work/bitmap_gen

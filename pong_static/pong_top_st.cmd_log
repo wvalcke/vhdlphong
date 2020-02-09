@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/home/dumbo/XilinxProjects/PhongVhdlBook/pong_static/pong_top_st.xst" -ofn "/home/dumbo/XilinxProjects/PhongVhdlBook/pong_static/pong_top_st.syr" 
+xst -intstyle ise -ifn "/home/dumbo/XilinxProjects/PhongVhdlBook/pong_static/pong_top_st.xst" -ofn "/home/dumbo/XilinxProjects/PhongVhdlBook/pong_static/pong_top_st.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc Nexys2_1200General.ucf -p xc3s1200e-fg320-5 pong_top_st.ngc pong_top_st.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o pong_top_st_map.ncd pong_top_st.ngd pong_top_st.pcf 
+par -w -intstyle ise -ol high -t 1 pong_top_st_map.ncd pong_top_st.ncd pong_top_st.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml pong_top_st.twx pong_top_st.ncd -o pong_top_st.twr pong_top_st.pcf -ucf Nexys2_1200General.ucf 
+bitgen -intstyle ise -f pong_top_st.ut pong_top_st.ncd 

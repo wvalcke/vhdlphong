@@ -1,0 +1,22 @@
+V3 11
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/pong_animated/list_ch12_01_vga_sync.vhd 2020/02/01.12:18:30 P.20131013
+EN work/vga_sync 1580563182 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/pong_animated/list_ch12_01_vga_sync.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/vga_sync/arch 1580563183 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/pong_animated/list_ch12_01_vga_sync.vhd \
+      EN work/vga_sync 1580563182
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/pong_animated/list_ch12_05_pong_gra_an.vhd 2020/02/01.14:16:46 P.20131013
+EN work/pong_graph_animate 1580563184 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/pong_animated/list_ch12_05_pong_gra_an.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/pong_graph_animate/arch 1580563185 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/pong_animated/list_ch12_05_pong_gra_an.vhd \
+      EN work/pong_graph_animate 1580563184
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/pong_animated/list_ch12_06_pong_top_an.vhd 2020/02/01.14:19:37 P.20131013
+EN work/pong_top_an 1580563186 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/pong_animated/list_ch12_06_pong_top_an.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/pong_top_an/arch 1580563187 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/pong_animated/list_ch12_06_pong_top_an.vhd \
+      EN work/pong_top_an 1580563186 CP work/vga_sync CP work/pong_graph_animate

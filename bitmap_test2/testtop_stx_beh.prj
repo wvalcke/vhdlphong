@@ -1,0 +1,7 @@
+vhdl isim_temp "ipcore_dir/blk_mem_gen_v7_3.vhd"
+vhdl isim_temp "list_ch06_01_02_debounce.vhd"
+vhdl isim_temp "x7seg.vhd"
+vhdl isim_temp "list_ch12_07_dot_gra.vhd"
+vhdl isim_temp "list_ch12_01_vga_sync.vhd"
+vhdl isim_temp "list_ch12_08_dot_top.vhd"
+vhdl isim_temp "testtop.vhd"

@@ -1,0 +1,29 @@
+V3 15
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/font_rom/list_ch12_01_vga_sync.vhd 2020/02/01.12:18:30 P.20131013
+EN work/vga_sync 1581253439 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/font_rom/list_ch12_01_vga_sync.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/vga_sync/arch 1581253440 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/font_rom/list_ch12_01_vga_sync.vhd \
+      EN work/vga_sync 1581253439
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/font_rom/list_ch13_01_font_rom.vhd 2020/02/02.13:44:54 P.20131013
+EN work/font_rom 1581253437 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/font_rom/list_ch13_01_font_rom.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/font_rom/arch 1581253438 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/font_rom/list_ch13_01_font_rom.vhd \
+      EN work/font_rom 1581253437
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/font_rom/list_ch13_02_font_test_gen.vhd 2020/02/09.14:03:31 P.20131013
+EN work/font_test_gen 1581253441 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/font_rom/list_ch13_02_font_test_gen.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/font_test_gen/arch 1581253442 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/font_rom/list_ch13_02_font_test_gen.vhd \
+      EN work/font_test_gen 1581253441 CP work/font_rom
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/font_rom/list_ch13_03_font_test_top.vhd 2020/02/09.14:03:51 P.20131013
+EN work/font_test_top 1581253443 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/font_rom/list_ch13_03_font_test_top.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/font_test_top/arch 1581253444 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/font_rom/list_ch13_03_font_test_top.vhd \
+      EN work/font_test_top 1581253443 CP work/vga_sync CP work/font_test_gen

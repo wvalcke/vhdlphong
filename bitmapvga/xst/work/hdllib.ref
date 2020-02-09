@@ -1,0 +1,11 @@
+AR dot_top arch /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvga/list_ch12_08_dot_top.vhd sub00/vhpl10 1580657323
+EN vga_sync NULL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvga/list_ch12_01_vga_sync.vhd sub00/vhpl05 1580657318
+EN bitmap_gen NULL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvga/list_ch12_07_dot_gra.vhd sub00/vhpl07 1580657320
+EN debounce NULL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvga/list_ch06_01_02_debounce.vhd sub00/vhpl00 1580657313
+AR blk_mem_gen_v7_3 blk_mem_gen_v7_3_a /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvga/ipcore_dir/blk_mem_gen_v7_3.vhd sub00/vhpl04 1580657317
+AR debounce fsmd_arch /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvga/list_ch06_01_02_debounce.vhd sub00/vhpl02 1580657315
+AR bitmap_gen dual_port_ram_arch /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvga/list_ch12_07_dot_gra.vhd sub00/vhpl08 1580657321
+EN dot_top NULL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvga/list_ch12_08_dot_top.vhd sub00/vhpl09 1580657322
+AR vga_sync arch /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvga/list_ch12_01_vga_sync.vhd sub00/vhpl06 1580657319
+EN blk_mem_gen_v7_3 NULL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvga/ipcore_dir/blk_mem_gen_v7_3.vhd sub00/vhpl03 1580657316
+AR debounce exp_fsmd_arch /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvga/list_ch06_01_02_debounce.vhd sub00/vhpl01 1580657314

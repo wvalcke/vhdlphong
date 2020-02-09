@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/dumbo/XilinxProjects/PhongVhdlBook/vgacircuit1/test_vga_bench_isim_beh.exe" -prj "/home/dumbo/XilinxProjects/PhongVhdlBook/vgacircuit1/test_vga_bench_beh.prj" "work.test_vga_bench" 

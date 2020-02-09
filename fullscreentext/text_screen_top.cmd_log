@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/text_screen_top.xst" -ofn "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/text_screen_top.syr" 
+xst -intstyle ise -ifn "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/text_screen_top.xst" -ofn "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/text_screen_top.syr" 
+xst -intstyle ise -ifn "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/text_screen_top.xst" -ofn "/home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/text_screen_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd coregen -aul -nt timestamp -uc Nexys2_1200General.ucf -p xc3s1200e-fg320-5 text_screen_top.ngc text_screen_top.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o text_screen_top_map.ncd text_screen_top.ngd text_screen_top.pcf 
+par -w -intstyle ise -ol high -t 1 text_screen_top_map.ncd text_screen_top.ncd text_screen_top.pcf 
+par -w -intstyle ise -ol std -t 1 text_screen_top_map.ncd text_screen_top.ncd text_screen_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml text_screen_top.twx text_screen_top.ncd -o text_screen_top.twr text_screen_top.pcf -ucf Nexys2_1200General.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd coregen -aul -nt timestamp -uc Nexys2_1200General.ucf -p xc3s1200e-fg320-5 text_screen_top.ngc text_screen_top.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o text_screen_top_map.ncd text_screen_top.ngd text_screen_top.pcf 
+par -w -intstyle ise -ol std -t 1 text_screen_top_map.ncd text_screen_top.ncd text_screen_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml text_screen_top.twx text_screen_top.ncd -o text_screen_top.twr text_screen_top.pcf -ucf Nexys2_1200General.ucf 
+par -w -intstyle ise -ol high -t 1 text_screen_top_map.ncd text_screen_top.ncd text_screen_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml text_screen_top.twx text_screen_top.ncd -o text_screen_top.twr text_screen_top.pcf -ucf Nexys2_1200General.ucf 
+bitgen -intstyle ise -f text_screen_top.ut text_screen_top.ncd 

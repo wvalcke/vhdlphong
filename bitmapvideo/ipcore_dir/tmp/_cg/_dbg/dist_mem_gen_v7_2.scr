@@ -1,0 +1,17 @@
+set -xsthdpdir "./_cg/_dbg/dist_mem_gen_v7_2_xsd"
+run
+-ifn "./_cg/_dbg/dist_mem_gen_v7_2.prj"
+-ifmt VHDL
+-ofmt NGC
+-ofn "./_cg/_dbg/dist_mem_gen_v7_2.ngc"
+-p xc3s1200e-5fg320
+-iobuf NO
+-work_lib work
+-ent dist_mem_gen_v7_2
+-arch spartan3e
+-top dist_mem_gen_v7_2
+-bus_delimiter <>
+-lso "./_cg/_dbg/_default.lso"
+-keep_hierarchy NO
+-resource_sharing NO
+-register_duplication NO

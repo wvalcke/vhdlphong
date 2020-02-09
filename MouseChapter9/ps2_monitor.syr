@@ -1,18 +1,21 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
  
---> Reading design: ps2_monitor.prj
+--> 
+Reading design: ps2_monitor.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -68,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -104,36 +107,47 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch04_11_mod_m.vhd" in Library work.
-Entity <mod_m_counter> compiled.
-Entity <mod_m_counter> (Architecture <arch>) compiled.
-Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_01_uart_rx.vhd" in Library work.
-Entity <uart_rx> compiled.
-Entity <uart_rx> (Architecture <arch>) compiled.
-Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch04_20_fifo.vhd" in Library work.
-Entity <fifo> compiled.
-Entity <fifo> (Architecture <arch>) compiled.
-Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_03_uart_tx.vhd" in Library work.
-Entity <uart_tx> compiled.
-Entity <uart_tx> (Architecture <arch>) compiled.
-Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_01_ps2_tx.vhd" in Library work.
-Entity <ps2_tx> compiled.
-Entity <ps2_tx> (Architecture <arch>) compiled.
-Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch08_01_ps2_rx.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/ps2_monitor is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_03_ps2_mon.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch09_03_ps2_mon.vhd".
+WARNING:HDLParsers:3607 - Unit work/ps2_monitor/arch is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_03_ps2_mon.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch09_03_ps2_mon.vhd".
+WARNING:HDLParsers:3607 - Unit work/debounce is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch06_01_02_debounce.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch06_01_02_debounce.vhd".
+WARNING:HDLParsers:3607 - Unit work/debounce/fsmd_arch is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch06_01_02_debounce.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch06_01_02_debounce.vhd".
+WARNING:HDLParsers:3607 - Unit work/uart is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_04_uart.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch07_04_uart.vhd".
+WARNING:HDLParsers:3607 - Unit work/uart/str_arch is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_04_uart.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch07_04_uart.vhd".
+WARNING:HDLParsers:3607 - Unit work/ps2_rxtx is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_02_ps2_rxtx.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch09_02_ps2_rxtx.vhd".
+WARNING:HDLParsers:3607 - Unit work/ps2_rxtx/arch is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_02_ps2_rxtx.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch09_02_ps2_rxtx.vhd".
+WARNING:HDLParsers:3607 - Unit work/mod_m_counter is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch04_11_mod_m.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch04_11_mod_m.vhd".
+WARNING:HDLParsers:3607 - Unit work/mod_m_counter/arch is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch04_11_mod_m.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch04_11_mod_m.vhd".
+WARNING:HDLParsers:3607 - Unit work/fifo is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch04_20_fifo.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch04_20_fifo.vhd".
+WARNING:HDLParsers:3607 - Unit work/fifo/arch is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch04_20_fifo.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch04_20_fifo.vhd".
+WARNING:HDLParsers:3607 - Unit work/uart_rx is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_01_uart_rx.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch07_01_uart_rx.vhd".
+WARNING:HDLParsers:3607 - Unit work/uart_rx/arch is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_01_uart_rx.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch07_01_uart_rx.vhd".
+WARNING:HDLParsers:3607 - Unit work/uart_tx is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_03_uart_tx.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch07_03_uart_tx.vhd".
+WARNING:HDLParsers:3607 - Unit work/uart_tx/arch is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_03_uart_tx.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch07_03_uart_tx.vhd".
+WARNING:HDLParsers:3607 - Unit work/ps2_rx is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch08_01_ps2_rx.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch08_01_ps2_rx.vhd".
+WARNING:HDLParsers:3607 - Unit work/ps2_rx/arch is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch08_01_ps2_rx.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch08_01_ps2_rx.vhd".
+WARNING:HDLParsers:3607 - Unit work/ps2_tx is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_01_ps2_tx.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch09_01_ps2_tx.vhd".
+WARNING:HDLParsers:3607 - Unit work/ps2_tx/arch is now defined in a different file.  It was defined in "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_01_ps2_tx.vhd", and is now defined in "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch09_01_ps2_tx.vhd".
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch04_11_mod_m.vhd" in Library work.
+Architecture arch of Entity mod_m_counter is up to date.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch07_01_uart_rx.vhd" in Library work.
+Architecture arch of Entity uart_rx is up to date.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch04_20_fifo.vhd" in Library work.
+Architecture arch of Entity fifo is up to date.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch07_03_uart_tx.vhd" in Library work.
+Architecture arch of Entity uart_tx is up to date.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch09_01_ps2_tx.vhd" in Library work.
+Architecture arch of Entity ps2_tx is up to date.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch08_01_ps2_rx.vhd" in Library work.
 Entity <ps2_rx> compiled.
 Entity <ps2_rx> (Architecture <arch>) compiled.
-Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch06_01_02_debounce.vhd" in Library work.
-Entity <debounce> compiled.
-Entity <debounce> (Architecture <fsmd_arch>) compiled.
-Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_02_ps2_rxtx.vhd" in Library work.
-Entity <ps2_rxtx> compiled.
-Entity <ps2_rxtx> (Architecture <arch>) compiled.
-Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_04_uart.vhd" in Library work.
-Entity <uart> compiled.
-Entity <uart> (Architecture <str_arch>) compiled.
-Compiling vhdl file "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_03_ps2_mon.vhd" in Library work.
-Entity <ps2_monitor> compiled.
-Entity <ps2_monitor> (Architecture <arch>) compiled.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch06_01_02_debounce.vhd" in Library work.
+Architecture fsmd_arch of Entity debounce is up to date.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch09_02_ps2_rxtx.vhd" in Library work.
+Architecture arch of Entity ps2_rxtx is up to date.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch07_04_uart.vhd" in Library work.
+Architecture str_arch of Entity uart is up to date.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch09_03_ps2_mon.vhd" in Library work.
+Architecture arch of Entity ps2_monitor is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -176,11 +190,11 @@ Analyzing hierarchy for entity <uart_tx> in library <work> (architecture <arch>)
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <ps2_monitor> in library <work> (Architecture <arch>).
-WARNING:Xst:753 - "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_03_ps2_mon.vhd" line 33: Unconnected output port 'db_level' of component 'debounce'.
-WARNING:Xst:753 - "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_03_ps2_mon.vhd" line 36: Unconnected output port 'tx_done_tick' of component 'ps2_rxtx'.
-WARNING:Xst:753 - "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_03_ps2_mon.vhd" line 41: Unconnected output port 'tx_full' of component 'uart'.
-WARNING:Xst:753 - "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_03_ps2_mon.vhd" line 41: Unconnected output port 'rx_empty' of component 'uart'.
-WARNING:Xst:753 - "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_03_ps2_mon.vhd" line 41: Unconnected output port 'r_data' of component 'uart'.
+WARNING:Xst:753 - "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch09_03_ps2_mon.vhd" line 33: Unconnected output port 'db_level' of component 'debounce'.
+WARNING:Xst:753 - "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch09_03_ps2_mon.vhd" line 36: Unconnected output port 'tx_done_tick' of component 'ps2_rxtx'.
+WARNING:Xst:753 - "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch09_03_ps2_mon.vhd" line 41: Unconnected output port 'tx_full' of component 'uart'.
+WARNING:Xst:753 - "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch09_03_ps2_mon.vhd" line 41: Unconnected output port 'rx_empty' of component 'uart'.
+WARNING:Xst:753 - "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch09_03_ps2_mon.vhd" line 41: Unconnected output port 'r_data' of component 'uart'.
 Entity <ps2_monitor> analyzed. Unit <ps2_monitor> generated.
 
 Analyzing Entity <debounce> in library <work> (Architecture <fsmd_arch>).
@@ -201,8 +215,8 @@ Analyzing generic Entity <uart> in library <work> (Architecture <str_arch>).
 	DVSR_BIT = 8
 	FIFO_W = 4
 	SB_TICK = 16
-WARNING:Xst:753 - "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_04_uart.vhd" line 37: Unconnected output port 'q' of component 'mod_m_counter'.
-WARNING:Xst:753 - "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_04_uart.vhd" line 46: Unconnected output port 'full' of component 'fifo'.
+WARNING:Xst:753 - "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch07_04_uart.vhd" line 37: Unconnected output port 'q' of component 'mod_m_counter'.
+WARNING:Xst:753 - "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch07_04_uart.vhd" line 46: Unconnected output port 'full' of component 'fifo'.
 Entity <uart> analyzed. Unit <uart> generated.
 
 Analyzing generic Entity <mod_m_counter> in library <work> (Architecture <arch>).
@@ -233,7 +247,7 @@ Entity <uart_tx> analyzed. Unit <uart_tx> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <debounce>.
-    Related source file is "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch06_01_02_debounce.vhd".
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch06_01_02_debounce.vhd".
     Found finite state machine <FSM_0> for signal <state_reg>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
@@ -258,7 +272,7 @@ Unit <debounce> synthesized.
 
 
 Synthesizing Unit <ps2_tx>.
-    Related source file is "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_01_ps2_tx.vhd".
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch09_01_ps2_tx.vhd".
     Found finite state machine <FSM_1> for signal <state_reg>.
     -----------------------------------------------------------------------
     | States             | 5                                              |
@@ -293,12 +307,12 @@ Unit <ps2_tx> synthesized.
 
 
 Synthesizing Unit <ps2_rx>.
-    Related source file is "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch08_01_ps2_rx.vhd".
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch08_01_ps2_rx.vhd".
 WARNING:Xst:646 - Signal <b_reg<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found finite state machine <FSM_2> for signal <state_reg>.
     -----------------------------------------------------------------------
     | States             | 3                                              |
-    | Transitions        | 7                                              |
+    | Transitions        | 8                                              |
     | Inputs             | 3                                              |
     | Outputs            | 3                                              |
     | Clock              | clk                       (rising_edge)        |
@@ -313,7 +327,7 @@ WARNING:Xst:646 - Signal <b_reg<0>> is assigned but never used. This unconnected
     Found 1-bit register for signal <f_ps2c_reg>.
     Found 8-bit register for signal <filter_reg>.
     Found 4-bit register for signal <n_reg>.
-    Found 4-bit subtractor for signal <n_reg$addsub0000> created at line 82.
+    Found 4-bit subtractor for signal <n_reg$addsub0000> created at line 83.
     Summary:
 	inferred   1 Finite State Machine(s).
 	inferred  24 D-type flip-flop(s).
@@ -322,7 +336,7 @@ Unit <ps2_rx> synthesized.
 
 
 Synthesizing Unit <mod_m_counter>.
-    Related source file is "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch04_11_mod_m.vhd".
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch04_11_mod_m.vhd".
     Found 8-bit adder for signal <r_next$addsub0000> created at line 31.
     Found 8-bit register for signal <r_reg>.
     Summary:
@@ -332,7 +346,7 @@ Unit <mod_m_counter> synthesized.
 
 
 Synthesizing Unit <uart_rx>.
-    Related source file is "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_01_uart_rx.vhd".
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch07_01_uart_rx.vhd".
 INFO:Xst:1799 - State data is never reached in FSM <state_reg>.
 INFO:Xst:1799 - State start is never reached in FSM <state_reg>.
 INFO:Xst:1799 - State stop is never reached in FSM <state_reg>.
@@ -363,7 +377,7 @@ Unit <uart_rx> synthesized.
 
 
 Synthesizing Unit <fifo>.
-    Related source file is "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch04_20_fifo.vhd".
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch04_20_fifo.vhd".
     Found 8-bit 16-to-1 multiplexer for signal <r_data>.
     Found 128-bit register for signal <array_reg>.
     Found 1-bit register for signal <empty_reg>.
@@ -387,7 +401,7 @@ Unit <fifo> synthesized.
 
 
 Synthesizing Unit <uart_tx>.
-    Related source file is "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_03_uart_tx.vhd".
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch07_03_uart_tx.vhd".
     Found finite state machine <FSM_4> for signal <state_reg>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
@@ -416,17 +430,17 @@ Unit <uart_tx> synthesized.
 
 
 Synthesizing Unit <ps2_rxtx>.
-    Related source file is "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_02_ps2_rxtx.vhd".
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch09_02_ps2_rxtx.vhd".
 Unit <ps2_rxtx> synthesized.
 
 
 Synthesizing Unit <uart>.
-    Related source file is "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch07_04_uart.vhd".
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch07_04_uart.vhd".
 Unit <uart> synthesized.
 
 
 Synthesizing Unit <ps2_monitor>.
-    Related source file is "C:/BEP/fpga/vhdlphong/MouseChapter9/list_ch09_03_ps2_mon.vhd".
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/list_ch09_03_ps2_mon.vhd".
     Found finite state machine <FSM_5> for signal <state_reg>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
@@ -817,20 +831,20 @@ Design Statistics
 # IOs                              : 14
 
 Cell Usage :
-# BELS                             : 589
+# BELS                             : 582
 #      GND                         : 1
 #      INV                         : 32
 #      LUT1                        : 2
-#      LUT2                        : 19
-#      LUT2_D                      : 3
-#      LUT3                        : 103
+#      LUT2                        : 16
+#      LUT2_D                      : 4
+#      LUT3                        : 102
 #      LUT3_D                      : 2
-#      LUT3_L                      : 13
-#      LUT4                        : 229
-#      LUT4_D                      : 9
-#      LUT4_L                      : 21
+#      LUT3_L                      : 12
+#      LUT4                        : 231
+#      LUT4_D                      : 8
+#      LUT4_L                      : 19
 #      MUXCY                       : 38
-#      MUXF5                       : 61
+#      MUXF5                       : 59
 #      MUXF6                       : 14
 #      MUXF7                       : 7
 #      VCC                         : 1
@@ -852,9 +866,9 @@ Device utilization summary:
 
 Selected Device : 3s1200efg320-5 
 
- Number of Slices:                      254  out of   8672     2%  
+ Number of Slices:                      253  out of   8672     2%  
  Number of Slice Flip Flops:            230  out of  17344     1%  
- Number of 4 input LUTs:                433  out of  17344     2%  
+ Number of 4 input LUTs:                428  out of  17344     2%  
  Number of IOs:                          14
  Number of bonded IOBs:                  14  out of    250     5%  
  Number of GCLKs:                         1  out of     24     4%  
@@ -907,7 +921,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 8.477ns (frequency: 117.966MHz)
-  Total number of paths / destination ports: 13466 / 339
+  Total number of paths / destination ports: 13445 / 339
 -------------------------------------------------------------------------
 Delay:               8.477ns (Levels of Logic = 26)
   Source:            btn_db_unit/q_reg_0 (FF)
@@ -992,7 +1006,7 @@ Offset:              5.885ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             63   0.514   1.233  ps2_rxtx_unit/ps2_tx_unit/state_reg_FSM_FFd3 (ps2_rxtx_unit/ps2_tx_unit/state_reg_FSM_FFd3)
+     FDC:C->Q             62   0.514   1.233  ps2_rxtx_unit/ps2_tx_unit/state_reg_FSM_FFd3 (ps2_rxtx_unit/ps2_tx_unit/state_reg_FSM_FFd3)
      LUT4:I0->O            1   0.612   0.357  ps2_rxtx_unit/ps2_tx_unit/ps2d_out1 (ps2_rxtx_unit/ps2_tx_unit/ps2d_out)
      IOBUF:I->IO               3.169          ps2d_IOBUF (ps2d)
     ----------------------------------------
@@ -1002,14 +1016,15 @@ Offset:              5.885ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 11.46 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.62 secs
  
 --> 
 
-Total memory usage is 4542156 kilobytes
+
+Total memory usage is 536280 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  182 (   0 filtered)
+Number of warnings :  202 (   0 filtered)
 Number of infos    :   12 (   0 filtered)
 

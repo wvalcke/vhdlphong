@@ -74,14 +74,18 @@ begin
                state_next <= dps;
             end if;
          when dps =>  -- 8 data + 1 pairty + 1 stop
-            if fall_edge='1' then
-            b_next <= ps2d & b_reg(10 downto 1);
-               if n_reg = 0 then
-                   state_next <=load;
-               else
-                   n_next <= n_reg - 1;
-               end if;
-            end if;
+			   if rx_en = '1' then
+					if fall_edge='1' then
+					b_next <= ps2d & b_reg(10 downto 1);
+						if n_reg = 0 then
+							 state_next <=load;
+						else
+							 n_next <= n_reg - 1;
+						end if;
+					end if;
+				else
+				    state_next <= idle;
+				end if;
          when load =>
             -- 1 extra clock to complete the last shift
             state_next <= idle;

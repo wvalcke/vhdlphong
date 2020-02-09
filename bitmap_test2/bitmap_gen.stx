@@ -1,0 +1,46 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.02 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.02 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch06_01_02_debounce.vhd" in Library work.
+Entity <debounce> compiled.
+Entity <debounce> (Architecture <exp_fsmd_arch>) compiled.
+Entity <debounce> (Architecture <fsmd_arch>) compiled.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch11_04_x_ram_2p_sync.vhd" in Library work.
+Entity <xilinx_dual_port_ram_sync> compiled.
+Entity <xilinx_dual_port_ram_sync> (Architecture <beh_arch>) compiled.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch12_07_dot_gra.vhd" in Library work.
+Entity <bitmap_gen> compiled.
+Entity <bitmap_gen> (Architecture <dual_port_ram_arch>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+
+
+Total memory usage is 472388 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

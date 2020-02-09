@@ -1,0 +1,60 @@
+V3 30
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/ipcore_dir/blk_mem_gen_v7_3.vhd 2020/02/02.00:29:45 P.20131013
+EN work/blk_mem_gen_v7_3 1580637750 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/ipcore_dir/blk_mem_gen_v7_3.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/blk_mem_gen_v7_3/blk_mem_gen_v7_3_a 1580637751 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/ipcore_dir/blk_mem_gen_v7_3.vhd \
+      EN work/blk_mem_gen_v7_3 1580637750
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/ipcore_dir/dist_mem_gen_v7_2.vhd 2020/02/02.00:18:06 P.20131013
+EN work/dist_mem_gen_v7_2 1580599295 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/ipcore_dir/dist_mem_gen_v7_2.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/dist_mem_gen_v7_2/dist_mem_gen_v7_2_a 1580599296 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/ipcore_dir/dist_mem_gen_v7_2.vhd \
+      EN work/dist_mem_gen_v7_2 1580599295
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch06_01_02_debounce.vhd 2008/01/28.17:00:32 P.20131013
+EN work/debounce 1580637747 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch06_01_02_debounce.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/debounce/exp_fsmd_arch 1580637748 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch06_01_02_debounce.vhd \
+      EN work/debounce 1580637747
+AR work/debounce/fsmd_arch 1580637749 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch06_01_02_debounce.vhd \
+      EN work/debounce 1580637747
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch11_04_x_ram_2p_sync.vhd 2020/02/01.18:20:58 P.20131013
+EN work/xilinx_dual_port_ram_sync 1580598087 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch11_04_x_ram_2p_sync.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/xilinx_dual_port_ram_sync/beh_arch 1580598088 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch11_04_x_ram_2p_sync.vhd \
+      EN work/xilinx_dual_port_ram_sync 1580598087
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch12_01_vga_sync.vhd 2020/02/01.12:18:30 P.20131013
+EN work/vga_sync 1580637752 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch12_01_vga_sync.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/vga_sync/arch 1580637753 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch12_01_vga_sync.vhd \
+      EN work/vga_sync 1580637752
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch12_07_dot_gra.vhd 2020/02/02.11:02:20 P.20131013
+EN work/bitmap_gen 1580637754 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch12_07_dot_gra.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/bitmap_gen/dual_port_ram_arch 1580637755 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch12_07_dot_gra.vhd \
+      EN work/bitmap_gen 1580637754 CP work/debounce CP work/blk_mem_gen_v7_3
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch12_08_dot_top.vhd 2020/02/01.23:45:23 P.20131013
+EN work/dot_top 1580637758 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch12_08_dot_top.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/dot_top/arch 1580637759 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/list_ch12_08_dot_top.vhd \
+      EN work/dot_top 1580637758 CP work/vga_sync CP work/bitmap_gen CP work/x7seg
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/x7seg.vhd 2020/02/01.23:34:42 P.20131013
+EN work/x7seg 1580637756 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/x7seg.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/x7seg/Behavioral 1580637757 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/x7seg.vhd \
+      EN work/x7seg 1580637756

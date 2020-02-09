@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/dot_top.ncd
+OUTFILE=/home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2/dot_top.bit
+FAMILY=Spartan3E
+PART=xc3s1200e-5fg320
+WORKINGDIR=/home/dumbo/XilinxProjects/PhongVhdlBook/bitmap_test2
+LICENSE=WebPack
+USER_INFO=__0_0_0

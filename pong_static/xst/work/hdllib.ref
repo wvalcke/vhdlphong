@@ -1,0 +1,6 @@
+EN vga_sync NULL /home/dumbo/XilinxProjects/PhongVhdlBook/pong_static/list_ch12_01_vga_sync.vhd sub00/vhpl00 1580562170
+EN pong_top_st NULL /home/dumbo/XilinxProjects/PhongVhdlBook/pong_static/list_ch12_04_pong_top_st.vhd sub00/vhpl04 1580562174
+AR pong_graph_st sq_ball_arch /home/dumbo/XilinxProjects/PhongVhdlBook/pong_static/list_ch12_03_pong_gra_st.vhd sub00/vhpl03 1580562173
+EN pong_graph_st NULL /home/dumbo/XilinxProjects/PhongVhdlBook/pong_static/list_ch12_03_pong_gra_st.vhd sub00/vhpl02 1580562172
+AR pong_top_st arch /home/dumbo/XilinxProjects/PhongVhdlBook/pong_static/list_ch12_04_pong_top_st.vhd sub00/vhpl05 1580562175
+AR vga_sync arch /home/dumbo/XilinxProjects/PhongVhdlBook/pong_static/list_ch12_01_vga_sync.vhd sub00/vhpl01 1580562171

@@ -1,0 +1,40 @@
+Command line:
+   test_vga_bench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55371
+
+Sat Feb  1 11:39:37 2020
+
+
+ Elaboration Time: 0.05 sec
+
+ Current Memory Usage: 248.418 Meg
+
+ Total Signals          : 41
+ Total Nets             : 108
+ Total Signal Drivers   : 28
+ Total Blocks           : 5
+ Total Primitive Blocks : 3
+ Total Processes        : 23
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 600
+
+** Failure:Simulation completed
+User(VHDL) Code Called Simulation Stop
+In process test_vga_bench.vhd:stim_proc 
+ 
+
+
+** Failure:Simulation completed
+User(VHDL) Code Called Simulation Stop
+In process test_vga_bench.vhd:stim_proc 
+ 
+
+
+ Total Simulation Time: 11.04 sec
+
+ Current Memory Usage: 323.92 Meg
+
+Sat Feb  1 15:18:05 2020
+

@@ -1,0 +1,34 @@
+Command line:
+   testtop_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  39167
+
+Sun Feb  2 10:59:46 2020
+
+
+ Elaboration Time: 0.14 sec
+
+ Current Memory Usage: 342.897 Meg
+
+ Total Signals          : 316
+ Total Nets             : 131887
+ Total Signal Drivers   : 126
+ Total Blocks           : 24
+ Total Primitive Blocks : 14
+ Total Processes        : 92
+ Total Traceable Variables  : 246
+ Total Scalar Nets and Variables : 133389
+
+** Failure:Simulation completed
+User(VHDL) Code Called Simulation Stop
+In process testtop.vhd:stim_proc 
+ 
+
+
+ Total Simulation Time: 16.53 sec
+
+ Current Memory Usage: 418.398 Meg
+
+Sun Feb  9 14:05:30 2020
+

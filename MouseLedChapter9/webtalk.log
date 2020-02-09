@@ -4,13 +4,13 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 Project Information
 --------------------
 ProjectID=0732DB20D7AE4E25A4AB7DB052128D8E
-ProjectIteration=1
+ProjectIteration=2
 
 WebTalk Summary
 ----------------
 INFO:WebTalk:1 - WebTalk is enabled because you are using a WebPACK license.
 
-INFO:WebTalk:9 - WebTalk Install setting is OFF.
+INFO:WebTalk:8 - WebTalk Install setting is ON.
 INFO:WebTalk:6 - WebTalk User setting is ON.
 
-INFO:WebTalk:5 - C:/BEP/fpga/vhdlphong/MouseLedChapter9/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/14.7/ISE_DS/ISE/data/reports/webtalk_introduction.html
+INFO:WebTalk:5 - /home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/14.7/ISE_DS/ISE/data/reports/webtalk_introduction.html

@@ -1,0 +1,3 @@
+vhdl isim_temp "list_ch12_01_vga_sync.vhd"
+vhdl isim_temp "list_ch12_02_vga_sync_test.vhd"
+vhdl isim_temp "test_top.vhd"

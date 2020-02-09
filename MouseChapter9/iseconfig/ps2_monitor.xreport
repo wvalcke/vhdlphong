@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-01-14T09:33:06</DateModified>
+  <DateModified>2020-01-18T09:27:45</DateModified>
   <ModuleName>ps2_monitor</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/BEP/fpga/vhdlphong/MouseChapter9/iseconfig/ps2_monitor.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/BEP/fpga/vhdlphong/MouseChapter9</ImplementationReportsDirectory>
+  <SavedFilePath>/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/iseconfig/ps2_monitor.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/dumbo/XilinxProjects/PhongVhdlBook/MouseChapter9/</ImplementationReportsDirectory>
   <DateInitialized>2020-01-14T09:33:06</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

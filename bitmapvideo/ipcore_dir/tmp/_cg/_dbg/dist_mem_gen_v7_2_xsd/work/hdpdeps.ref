@@ -1,0 +1,9 @@
+V3 5
+FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/dist_mem_gen_v7_2.vhd 2020/02/01.15:00:49 P.20131013
+EN work/dist_mem_gen_v7_2 1580565672 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/dist_mem_gen_v7_2.vhd \
+      PB ieee/std_logic_1164 1381692176 LB dist_mem_gen_v7_2 \
+      EN dist_mem_gen_v7_2/dist_mem_gen_v7_2 1580565670
+AR work/dist_mem_gen_v7_2/spartan3e 1580565673 \
+      FL /home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcore_dir/tmp/./_cg/_dbg/dist_mem_gen_v7_2.vhd \
+      EN work/dist_mem_gen_v7_2 1580565672 CP dist_mem_gen_v7_2

@@ -1,0 +1,20 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Feb 09 14:11:21 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "vgablue<2>" LOCATE = SITE "U5" LEVEL 1;
+COMP "vgablue<3>" LOCATE = SITE "U4" LEVEL 1;
+COMP "vgared<1>" LOCATE = SITE "R9" LEVEL 1;
+COMP "vgared<2>" LOCATE = SITE "T8" LEVEL 1;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "vgared<3>" LOCATE = SITE "R8" LEVEL 1;
+COMP "btn<3>" LOCATE = SITE "H13" LEVEL 1;
+COMP "hsync" LOCATE = SITE "T4" LEVEL 1;
+COMP "vsync" LOCATE = SITE "U3" LEVEL 1;
+COMP "vgagreen<1>" LOCATE = SITE "N8" LEVEL 1;
+COMP "vgagreen<2>" LOCATE = SITE "P8" LEVEL 1;
+COMP "vgagreen<3>" LOCATE = SITE "P6" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

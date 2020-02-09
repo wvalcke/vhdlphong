@@ -1,0 +1,462 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter xsthdpdir set to ./_cg/_dbg/dist_mem_gen_v7_2_xsd
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: ./_cg/_dbg/dist_mem_gen_v7_2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "./_cg/_dbg/dist_mem_gen_v7_2.prj"
+Input Format                       : VHDL
+
+---- Target Parameters
+Output Format                      : NGC
+Output File Name                   : "./_cg/_dbg/dist_mem_gen_v7_2.ngc"
+Target Device                      : xc3s1200e-5fg320
+
+---- Source Options
+Work Library                       : work
+Entity Name                        : dist_mem_gen_v7_2
+Architecture Name                  : spartan3e
+Top Module Name                    : dist_mem_gen_v7_2
+Resource Sharing                   : NO
+
+---- Target Options
+Add IO Buffers                     : NO
+Register Duplication               : NO
+
+---- General Options
+Bus Delimiter                      : <>
+Library Search Order               : "./_cg/_dbg/_default.lso"
+Keep Hierarchy                     : NO
+
+=========================================================================
+
+WARNING:Xst:29 - Optimization Effort not specified
+The following parameters have been added:
+Optimization Goal                  : SPEED
+
+=========================================================================
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_utils.vhd" in Library dist_mem_gen_v7_2.
+Package <dist_mem_utils> compiled.
+Package body <dist_mem_utils> compiled.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_comps.vhd" in Library dist_mem_gen_v7_2.
+Package <dist_mem_comps> compiled.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/rom/rom.vhd" in Library dist_mem_gen_v7_2.
+Entity <rom> compiled.
+Entity <rom> (Architecture <rtl>) compiled.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/spram/spram.vhd" in Library dist_mem_gen_v7_2.
+Entity <spram> compiled.
+Entity <spram> (Architecture <rtl>) compiled.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dpram/dpram.vhd" in Library dist_mem_gen_v7_2.
+Entity <dpram> compiled.
+Entity <dpram> (Architecture <rtl>) compiled.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/sdpram/sdpram.vhd" in Library dist_mem_gen_v7_2.
+Entity <sdpram> compiled.
+Entity <sdpram> (Architecture <rtl>) compiled.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/srlram/srl_block.vhd" in Library dist_mem_gen_v7_2.
+Entity <srl_block> compiled.
+Entity <srl_block> (Architecture <rtl>) compiled.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/srlram/srlram.vhd" in Library dist_mem_gen_v7_2.
+Entity <srlram> compiled.
+Entity <srlram> (Architecture <rtl>) compiled.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2_xst_comp.vhd" in Library dist_mem_gen_v7_2.
+Package <dist_mem_gen_v7_2_xst_comp> compiled.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2_xst.vhd" in Library dist_mem_gen_v7_2.
+Entity <dist_mem_gen_v7_2_xst> compiled.
+Entity <dist_mem_gen_v7_2_xst> (Architecture <rtl>) compiled.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd" in Library dist_mem_gen_v7_2.
+Entity <dist_mem_gen_v7_2> compiled.
+Entity <dist_mem_gen_v7_2> (Architecture <xilinx>) compiled.
+Compiling vhdl file "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/dist_mem_gen_v7_2.vhd" in Library work.
+Entity <dist_mem_gen_v7_2> compiled.
+Entity <dist_mem_gen_v7_2> (Architecture <spartan3e>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <dist_mem_gen_v7_2> in library <work> (architecture <spartan3e>).
+
+Analyzing hierarchy for entity <dist_mem_gen_v7_2> in library <dist_mem_gen_v7_2> (architecture <xilinx>) with generics.
+	c_addr_width = 14
+	c_default_data = "0"
+	c_depth = 16384
+	c_elaboration_dir = "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/_cg/"
+	c_family = "spartan3"
+	c_has_clk = 1
+	c_has_d = 1
+	c_has_dpo = 1
+	c_has_dpra = 1
+	c_has_i_ce = 0
+	c_has_qdpo = 0
+	c_has_qdpo_ce = 0
+	c_has_qdpo_clk = 0
+	c_has_qdpo_rst = 0
+	c_has_qdpo_srst = 0
+	c_has_qspo = 0
+	c_has_qspo_ce = 0
+	c_has_qspo_rst = 0
+	c_has_qspo_srst = 0
+	c_has_spo = 1
+	c_has_spra = 0
+	c_has_we = 1
+	c_mem_init_file = "no_coe_file_loaded"
+	c_mem_type = 2
+	c_parser_type = 1
+	c_pipeline_stages = 0
+	c_qce_joined = 0
+	c_qualify_we = 0
+	c_read_mif = 0
+	c_reg_a_d_inputs = 0
+	c_reg_dpra_input = 0
+	c_sync_enable = 1
+	c_width = 8
+WARNING:Xst:795 - "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd" line 142: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd" line 142: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd" line 142: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd" line 142: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd" line 142: Size of operands are different : result is <false>.
+
+Analyzing hierarchy for entity <dist_mem_gen_v7_2_xst> in library <dist_mem_gen_v7_2> (architecture <rtl>) with generics.
+	c_addr_width = 14
+	c_default_data = "0"
+	c_depth = 16384
+	c_elaboration_dir = "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/_cg/"
+	c_family = "spartan3"
+	c_has_clk = 1
+	c_has_d = 1
+	c_has_dpo = 1
+	c_has_dpra = 1
+	c_has_i_ce = 0
+	c_has_qdpo = 0
+	c_has_qdpo_ce = 0
+	c_has_qdpo_clk = 0
+	c_has_qdpo_rst = 0
+	c_has_qdpo_srst = 0
+	c_has_qspo = 0
+	c_has_qspo_ce = 0
+	c_has_qspo_rst = 0
+	c_has_qspo_srst = 0
+	c_has_spo = 1
+	c_has_spra = 0
+	c_has_we = 1
+	c_mem_init_file = "no_coe_file_loaded"
+	c_mem_type = 2
+	c_parser_type = 1
+	c_pipeline_stages = 0
+	c_qce_joined = 0
+	c_qualify_we = 0
+	c_read_mif = 0
+	c_reg_a_d_inputs = 0
+	c_reg_dpra_input = 0
+	c_sync_enable = 1
+	c_width = 8
+
+Analyzing hierarchy for entity <dpram> in library <dist_mem_gen_v7_2> (architecture <rtl>) with generics.
+	c_addr_width = 14
+	c_default_data = "0"
+	c_depth = 16384
+	c_elaboration_dir = "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/_cg/"
+	c_has_dpo = 1
+	c_has_dpra = 1
+	c_has_i_ce = 0
+	c_has_qdpo = 0
+	c_has_qdpo_ce = 0
+	c_has_qdpo_clk = 0
+	c_has_qdpo_rst = 0
+	c_has_qdpo_srst = 0
+	c_has_qspo = 0
+	c_has_qspo_ce = 0
+	c_has_qspo_rst = 0
+	c_has_qspo_srst = 0
+	c_has_spo = 1
+	c_mem_init_file = "no_coe_file_loaded"
+	c_parser_type = 1
+	c_pipeline_stages = 0
+	c_qce_joined = 0
+	c_qualify_we = 0
+	c_read_mif = 0
+	c_reg_a_d_inputs = 0
+	c_reg_dpra_input = 0
+	c_sync_enable = 1
+	c_width = 8
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <dist_mem_gen_v7_2> in library <work> (Architecture <spartan3e>).
+WARNING:Xst:752 - "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/dist_mem_gen_v7_2.vhd" line 121: Unconnected input port 'spra' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:752 - "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/dist_mem_gen_v7_2.vhd" line 121: Unconnected input port 'i_ce' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:752 - "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/dist_mem_gen_v7_2.vhd" line 121: Unconnected input port 'qspo_ce' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:752 - "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/dist_mem_gen_v7_2.vhd" line 121: Unconnected input port 'qdpo_ce' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:752 - "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/dist_mem_gen_v7_2.vhd" line 121: Unconnected input port 'qdpo_clk' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:752 - "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/dist_mem_gen_v7_2.vhd" line 121: Unconnected input port 'qspo_rst' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:752 - "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/dist_mem_gen_v7_2.vhd" line 121: Unconnected input port 'qdpo_rst' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:752 - "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/dist_mem_gen_v7_2.vhd" line 121: Unconnected input port 'qspo_srst' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:752 - "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/dist_mem_gen_v7_2.vhd" line 121: Unconnected input port 'qdpo_srst' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:753 - "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/dist_mem_gen_v7_2.vhd" line 121: Unconnected output port 'qspo' of component 'dist_mem_gen_v7_2'.
+WARNING:Xst:753 - "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/dist_mem_gen_v7_2.vhd" line 121: Unconnected output port 'qdpo' of component 'dist_mem_gen_v7_2'.
+Entity <dist_mem_gen_v7_2> analyzed. Unit <dist_mem_gen_v7_2> generated.
+
+Analyzing generic Entity <dist_mem_gen_v7_2.2> in library <dist_mem_gen_v7_2> (Architecture <xilinx>).
+	c_addr_width = 14
+	c_default_data = "0"
+	c_depth = 16384
+	c_elaboration_dir = "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/_cg/"
+	c_family = "spartan3"
+	c_has_clk = 1
+	c_has_d = 1
+	c_has_dpo = 1
+	c_has_dpra = 1
+	c_has_i_ce = 0
+	c_has_qdpo = 0
+	c_has_qdpo_ce = 0
+	c_has_qdpo_clk = 0
+	c_has_qdpo_rst = 0
+	c_has_qdpo_srst = 0
+	c_has_qspo = 0
+	c_has_qspo_ce = 0
+	c_has_qspo_rst = 0
+	c_has_qspo_srst = 0
+	c_has_spo = 1
+	c_has_spra = 0
+	c_has_we = 1
+	c_mem_init_file = "no_coe_file_loaded"
+	c_mem_type = 2
+	c_parser_type = 1
+	c_pipeline_stages = 0
+	c_qce_joined = 0
+	c_qualify_we = 0
+	c_read_mif = 0
+	c_reg_a_d_inputs = 0
+	c_reg_dpra_input = 0
+	c_sync_enable = 1
+	c_width = 8
+Entity <dist_mem_gen_v7_2.2> analyzed. Unit <dist_mem_gen_v7_2.2> generated.
+
+Analyzing generic Entity <dist_mem_gen_v7_2_xst> in library <dist_mem_gen_v7_2> (Architecture <rtl>).
+	c_addr_width = 14
+	c_default_data = "0"
+	c_depth = 16384
+	c_elaboration_dir = "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/_cg/"
+	c_family = "spartan3"
+	c_has_clk = 1
+	c_has_d = 1
+	c_has_dpo = 1
+	c_has_dpra = 1
+	c_has_i_ce = 0
+	c_has_qdpo = 0
+	c_has_qdpo_ce = 0
+	c_has_qdpo_clk = 0
+	c_has_qdpo_rst = 0
+	c_has_qdpo_srst = 0
+	c_has_qspo = 0
+	c_has_qspo_ce = 0
+	c_has_qspo_rst = 0
+	c_has_qspo_srst = 0
+	c_has_spo = 1
+	c_has_spra = 0
+	c_has_we = 1
+	c_mem_init_file = "no_coe_file_loaded"
+	c_mem_type = 2
+	c_parser_type = 1
+	c_pipeline_stages = 0
+	c_qce_joined = 0
+	c_qualify_we = 0
+	c_read_mif = 0
+	c_reg_a_d_inputs = 0
+	c_reg_dpra_input = 0
+	c_sync_enable = 1
+	c_width = 8
+Entity <dist_mem_gen_v7_2_xst> analyzed. Unit <dist_mem_gen_v7_2_xst> generated.
+
+Analyzing generic Entity <dpram> in library <dist_mem_gen_v7_2> (Architecture <rtl>).
+	c_addr_width = 14
+	c_default_data = "0"
+	c_depth = 16384
+	c_elaboration_dir = "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/_cg/"
+	c_has_dpo = 1
+	c_has_dpra = 1
+	c_has_i_ce = 0
+	c_has_qdpo = 0
+	c_has_qdpo_ce = 0
+	c_has_qdpo_clk = 0
+	c_has_qdpo_rst = 0
+	c_has_qdpo_srst = 0
+	c_has_qspo = 0
+	c_has_qspo_ce = 0
+	c_has_qspo_rst = 0
+	c_has_qspo_srst = 0
+	c_has_spo = 1
+	c_mem_init_file = "no_coe_file_loaded"
+	c_parser_type = 1
+	c_pipeline_stages = 0
+	c_qce_joined = 0
+	c_qualify_we = 0
+	c_read_mif = 0
+	c_reg_a_d_inputs = 0
+	c_reg_dpra_input = 0
+	c_sync_enable = 1
+	c_width = 8
+    Set user-defined property "KEEP =  true" for signal <qspo_int>.
+    Set user-defined property "KEEP =  true" for signal <qdpo_int>.
+    Set property "ram_extract = yes" for signal <ram>.
+    Set property "ram_style = pipe_distributed" for signal <ram>.
+Entity <dpram> analyzed. Unit <dpram> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <dpram>.
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dpram/dpram.vhd".
+WARNING:Xst:647 - Input <qdpo_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <qspo_srst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <qdpo_rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <qdpo_srst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <qspo_rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <i_ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <qspo> is never assigned. Tied to value 00000000.
+WARNING:Xst:1305 - Output <qdpo> is never assigned. Tied to value 00000000.
+WARNING:Xst:646 - Signal <we_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <qspo_pipe> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1580 - Signal <qspo_int> with a "KEEP" property is assigned but never used. Related logic will not be removed.
+WARNING:Xst:646 - Signal <qspo_ce_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <qdpo_pipe> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1580 - Signal <qdpo_int> with a "KEEP" property is assigned but never used. Related logic will not be removed.
+WARNING:Xst:646 - Signal <qdpo_ce_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <dpra_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <d_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <a_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 16384x8-bit dual-port RAM <Mram_ram> for signal <ram>.
+    Found 8-bit register for signal <qdpo_int>.
+    Found 8-bit register for signal <qspo_int>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <dpram> synthesized.
+
+
+Synthesizing Unit <dist_mem_gen_v7_2_xst>.
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2_xst.vhd".
+WARNING:Xst:647 - Input <spra> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <gnd_bus> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <a_srl> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <dist_mem_gen_v7_2_xst> synthesized.
+
+
+Synthesizing Unit <dist_mem_gen_v7_2_2>.
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd".
+WARNING:Xst:647 - Input <qdpo_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <qspo_ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <qdpo_rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <qspo_srst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <qdpo_ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <qdpo_srst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spra> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <qspo_rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <i_ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <vcc> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <gnd_bus<1023:14>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <gnd_bus<13:0>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000.
+WARNING:Xst:653 - Signal <gnd> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <dist_mem_gen_v7_2_2> synthesized.
+
+
+Synthesizing Unit <dist_mem_gen_v7_2>.
+    Related source file is "/home/dumbo/XilinxProjects/PhongVhdlBook/bitmapvideo/ipcoredir2/tmp/./_cg/_dbg/dist_mem_gen_v7_2.vhd".
+Unit <dist_mem_gen_v7_2> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16384x8-bit dual-port RAM                             : 1
+# Registers                                            : 2
+ 8-bit register                                        : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <dpram>.
+INFO:Xst:3216 - HDL ADVISOR - LUT implementation is currently selected for the RAM <Mram_ram>. If you want the register to be removed and the RAM to be implemented as block RAM, please change the RAM implementation style accordingly.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16384-word x 8-bit                  |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <a>             |          |
+    |     diA            | connected to signal <d>             |          |
+    |     doA            | connected to signal <spo_int>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 16384-word x 8-bit                  |          |
+    |     addrB          | connected to signal <dpra>          |          |
+    |     doB            | connected to signal <dpo_int>       |          |
+    -----------------------------------------------------------------------
+INFO:Xst:2390 - HDL ADVISOR - You can improve the performance of the ram Mram_ram by adding 11 register level(s) on output signal spo_int.
+INFO:Xst:2390 - HDL ADVISOR - You can improve the performance of the ram Mram_ram by adding 11 register level(s) on output signal dpo_int.
+Unit <dpram> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16384x8-bit dual-port distributed RAM                 : 1
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <dist_mem_gen_v7_2> ...
+
+Optimizing unit <dpram> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...

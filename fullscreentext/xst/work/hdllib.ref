@@ -1,0 +1,13 @@
+EN vga_sync NULL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch12_01_vga_sync.vhd sub00/vhpl07 1581258412
+EN text_screen_top NULL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_05_text_scr_top.vhd sub00/vhpl11 1581258416
+EN text_screen_gen NULL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_04_text_scr_gen.vhd sub00/vhpl09 1581258414
+EN dist_mem_gen_v7_2 NULL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/coregen/dist_mem_gen_v7_2.vhd sub00/vhpl05 1581258410
+AR dist_mem_gen_v7_2 dist_mem_gen_v7_2_a /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/coregen/dist_mem_gen_v7_2.vhd sub00/vhpl06 1581258411
+EN debounce NULL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch06_01_02_debounce.vhd sub00/vhpl00 1581258405
+AR debounce fsmd_arch /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch06_01_02_debounce.vhd sub00/vhpl02 1581258407
+AR text_screen_gen arch /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_04_text_scr_gen.vhd sub00/vhpl10 1581258415
+AR font_rom arch /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_01_font_rom.vhd sub00/vhpl04 1581258409
+EN font_rom NULL /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_01_font_rom.vhd sub00/vhpl03 1581258408
+AR vga_sync arch /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch12_01_vga_sync.vhd sub00/vhpl08 1581258413
+AR text_screen_top arch /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch13_05_text_scr_top.vhd sub00/vhpl12 1581258417
+AR debounce exp_fsmd_arch /home/dumbo/XilinxProjects/PhongVhdlBook/fullscreentext/list_ch06_01_02_debounce.vhd sub00/vhpl01 1581258406

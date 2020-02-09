@@ -5,82 +5,112 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_05_mouse_led.vhd</arg>&quot; line <arg fmt="%d" index="2">24</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ym</arg>&apos; of component &apos;<arg fmt="%s" index="4">mouse</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mouse_led</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_05_mouse_led.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_05_mouse_led.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">b_reg&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mouse_led/arch</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_05_mouse_led.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_05_mouse_led.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">btnm&lt;2&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mouse</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_04_mouse.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_04_mouse.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">b_reg_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ps2_tx_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mouse/arch</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_04_mouse.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_04_mouse.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">b_reg_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ps2_rx_unit</arg>&gt;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ps2_rxtx</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_02_ps2_rxtx.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_02_ps2_rxtx.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">btn_reg_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_unit</arg>&gt;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ps2_rxtx/arch</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_02_ps2_rxtx.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_02_ps2_rxtx.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">b_reg_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ps2_rx</arg>&gt;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ps2_rx</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch08_01_ps2_rx.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch08_01_ps2_rx.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">b_reg_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ps2_tx</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ps2_rx/arch</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch08_01_ps2_rx.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch08_01_ps2_rx.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mouse_unit/btn_reg_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ps2_tx</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_01_ps2_tx.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_01_ps2_tx.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mouse_unit/y_reg_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ps2_tx/arch</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/BEP/fpga/vhdlphong/MouseLedChapter9/list_ch09_01_ps2_tx.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_01_ps2_tx.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mouse_unit/y_reg_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/dumbo/XilinxProjects/PhongVhdlBook/MouseLedChapter9/list_ch09_05_mouse_led.vhd</arg>&quot; line <arg fmt="%d" index="2">24</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ym</arg>&apos; of component &apos;<arg fmt="%s" index="4">mouse</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mouse_unit/y_reg_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt;.
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">b_reg&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mouse_unit/y_reg_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt;.
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">btnm&lt;2&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mouse_unit/y_reg_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt;.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">b_reg_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ps2_tx_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mouse_unit/y_reg_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">b_reg_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ps2_rx_unit</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mouse_unit/y_reg_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btn_reg_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_unit</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mouse_unit/y_reg_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">b_reg_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ps2_rx</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mouse_unit/y_reg_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt;.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">b_reg_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ps2_tx</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mouse_unit/ps2_rxtx_unit/ps2_rx_unit/filter_reg_7&gt; </arg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mouse_unit/btn_reg_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mouse_unit/ps2_rxtx_unit/ps2_rx_unit/filter_reg_6&gt; </arg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mouse_unit/y_reg_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mouse_unit/ps2_rxtx_unit/ps2_rx_unit/filter_reg_5&gt; </arg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mouse_unit/y_reg_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mouse_unit/ps2_rxtx_unit/ps2_rx_unit/filter_reg_4&gt; </arg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mouse_unit/y_reg_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mouse_unit/ps2_rxtx_unit/ps2_rx_unit/filter_reg_3&gt; </arg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mouse_unit/y_reg_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mouse_unit/ps2_rxtx_unit/ps2_rx_unit/filter_reg_2&gt; </arg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mouse_unit/y_reg_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mouse_unit/ps2_rxtx_unit/ps2_rx_unit/filter_reg_1&gt; </arg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mouse_unit/y_reg_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mouse_unit/ps2_rxtx_unit/ps2_rx_unit/filter_reg_0&gt; </arg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mouse_unit/y_reg_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mouse_unit/y_reg_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mouse_unit/y_reg_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mouse_unit/ps2_rxtx_unit/ps2_rx_unit/filter_reg_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mouse_unit/ps2_rxtx_unit/ps2_rx_unit/filter_reg_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mouse_unit/ps2_rxtx_unit/ps2_rx_unit/filter_reg_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mouse_unit/ps2_rxtx_unit/ps2_rx_unit/filter_reg_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mouse_unit/ps2_rxtx_unit/ps2_rx_unit/filter_reg_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mouse_unit/ps2_rxtx_unit/ps2_rx_unit/filter_reg_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mouse_unit/ps2_rxtx_unit/ps2_rx_unit/filter_reg_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mouse_unit/ps2_rxtx_unit/ps2_tx_unit/filter_reg_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mouse_led</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mouse_unit/ps2_rxtx_unit/ps2_rx_unit/filter_reg_0&gt; </arg>
 </msg>
 
 </messages>
